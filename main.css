@@ -366,6 +366,9 @@ footer {
         padding-bottom: 10px;
         
     }
+    #hamburger-button a {
+        color: white;
+    }
 
     #nav-mobile li a {
         color: white;

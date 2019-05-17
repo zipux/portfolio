@@ -32,7 +32,7 @@ console.log(selecSqaure)
 }
 
 )
-document.querySelector('#hamburger-button button').addEventListener('click', function(e){
+document.querySelector('#hamburger-button a').addEventListener('click', function(e){
     e.preventDefault()
 
     const nav =  document.querySelector('#nav-mobile')
