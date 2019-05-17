@@ -302,15 +302,16 @@ input[type=submit]:hover {
     
 }
 
-.fa-phone {
-    display: none;
-}
 
 .icons  {
     display: flex;
     justify-content: space-around;
     max-width: 800px;
     margin: 0 auto;
+}
+
+.icons span:last-child {
+    display: none;
 }
 
 .icons a {
@@ -399,12 +400,9 @@ footer {
     form {
         margin: 10px;
     }
-    
-
-
-    .fa-phone{
-        display: block;
-    }
+    .icons span:last-child {
+        display: inline-block
+        }
        
 }
 
