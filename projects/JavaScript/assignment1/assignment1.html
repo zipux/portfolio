@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Assignment 1 - Simone Isonni</title>
+    <!-- NOTE: Reference your JavaScript solution here, above the commented out code below -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.5.2/jasmine.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.5.2/jasmine.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.5.2/jasmine-html.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.5.2/boot.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/daniel-takeuchi/COMP-2015/blob/master/assignments/assignment1/tests/assignment1.test.js"></script>
+    
+    <script src="script/code.js" defer></script>
+  </head>
+  <body>
+
+    <div id="top">
+        <div class="change">
+      <img src="images/bird.jpg" width="350px" ondblclick="hideshow(this)">
+      <img src="images/turtle.jpg" width="350px" ondblclick="hideshow(this)">
+      <img src="images/dog.jpg" width="350px" ondblclick="hideshow(this)"><br>
+
+      <a href="https://www.bcit.com">Visit BCIT website</a>
+      <a href="https://www.vancouver.ca">Visit Vancouver website</a>
+      <a href="https://www.nhl.com">Visit NHL website</a>
+
+      <p onmouseover="textcolor(this)" onmouseout="textcolor(this)" onclick="getborder(this)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id non nesciunt quasi numquam minus velit labore culpa maxime illum fugiat!</p>
+      <p onmouseover="textcolor(this)" onmouseout="textcolor(this)" onclick="getborder(this)"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro maiores ullam eligendi.</p>
+      <p onmouseover="textcolor(this)" onmouseout="textcolor(this)" onclick="getborder(this)">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci distinctio numquam earum pariatur, autem delectus?</p>
+      </div>
+    </div>
+
+    <div id="middle">
+      <img src="images/cat.jpg" width="350px" ondblclick="hideshow(this)">
+      <img src="images/fish.jpg" width="350px" ondblclick="hideshow(this)">
+      <img src="images/elk.jpg" width="350px" ondblclick="hideshow(this)"><br>
+  
+      <a href="https://www.bcit.com">Visit BCIT website</a>
+      <a href="https://www.vancouver.ca">Visit Vancouver website</a>
+      <a href="https://www.nhl.com">Visit NHL website</a>
+  
+      <p onclick="getborder(this)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id non nesciunt quasi numquam minus velit labore culpa maxime illum fugiat!</p>
+      <p onclick="getborder(this)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro maiores ullam eligendi.</p>
+      <p onclick="getborder(this)">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci distinctio numquam earum pariatur, autem delectus?</p>
+
+    </div>
+
+    <div id="bottom" class="change">
+      <img src="images/seal.jpg" width="350px">
+      <img src="images/deer.jpg" width="350px">
+      <img src="images/fox.jpg" width="350px"><br>
+    
+      <a href="https://www.bcit.com">Visit BCIT website</a>
+      <a href="https://www.vancouver.ca">Visit Vancouver website</a>
+      <a id="prevent" href="https://www.nhl.com">Visit NHL website</a>
+    
+      <p onmouseover="textcolor(this)" onmouseout="textcolor(this)" onclick="getborder(this)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id non nesciunt quasi numquam minus velit labore culpa maxime illum fugiat!</p>
+      <p onmouseover="textcolor(this)" onmouseout="textcolor(this)" onclick="getborder(this)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro maiores ullam eligendi.</p>
+      <p onmouseover="textcolor(this)" onmouseout="textcolor(this)" onclick="getborder(this)">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci distinctio numquam earum pariatur, autem delectus?</p>
+
+    </div>
+
+
+
+  </body>
+</html>

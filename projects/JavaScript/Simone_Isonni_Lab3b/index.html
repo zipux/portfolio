@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <img src="cat.jpg" id="im1"  width="250px" >
+        <img src="dog.jpg" id="im2"  width="250px" >
+        <img src="fish.jpg" id="im3" width="250px">
+    </div>
+
+    <div id="div2">
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="p2">Lorem ipsum dolor sit amet.</p>
+        <p id="p3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quos vero magni?</p>
+    </div>
+
+    <div id="div3">
+        <p id="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam exercitationem atque eveniet!</p>
+        <p id="p5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, excepturi?</p>
+        <img src="bird.jpg">
+        <img src="turtle.jpg">
+    </div>
+
+    <script>
+        $(document).ready(function(){
+        $("img").click(function() {
+        $(this).css('border', "solid 2px red");  
+      });
+    });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $("#im1, #im2, #im3").hover(function() {
+                $(this).width("100px");
+            }, 
+            // function(){
+            // $(this).width("250px");
+            // }
+            );
+        });
+    </script>
+
+
+
+    <script>
+        $(document).ready(function(){
+        $("p").dblclick(function(){
+            $(this).css("color", "blue");
+        });
+    });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+        $("#p4, #p5").hover(function(){
+        $(this).css("background-color", "yellow");
+        }, function(){
+        $(this).css("background-color", '');
+    });
+});
+    </script>
+ 
+</body>
+</html>
+
+

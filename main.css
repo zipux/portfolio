@@ -239,16 +239,18 @@ header .nav-desktop  a:hover {
 
 }
 
-.content-projects .square {
+/*.content-projects*/ .square {/* why did we use square? */ 
     padding: 5px;
     margin-top: 40px;
-    
 
 }
 
-.content-projects .square img {
+/*.content-projects*/ .square img {
     border: 1px solid blue;
     border-radius: 5px;
+    height: 200px;
+    width: 250px;
+
 }
 
 form {
@@ -329,6 +331,21 @@ footer {
     padding: 5px;
 }
 
+#myBtn{
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 20px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
 
 
 @font-face {
@@ -403,7 +420,10 @@ footer {
     .icons span:last-child {
         display: inline-block
         }
-       
+
+    #myBtn{
+        display: none; 
+    }
 }
 
 
