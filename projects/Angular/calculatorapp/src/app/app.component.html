@@ -1,0 +1,84 @@
+<h2>Angular calculator</h2>
+
+<p>Sum</p>
+<input type="text" [(ngModel)]="sumFirst" name="sumFirstValidation" #sumFirstValidation="ngModel" pattern="[-+]?[0-9]*[.,]?[0-9]+" minlength="1" > + 
+<input type="text" [(ngModel)]="sumSecond" name="sumSecondValidation" #sumSecondValidation="ngModel" pattern="[-+]?[0-9]*[.,]?[0-9]+" minlength="1" > 
+<button [disabled]="!sumFirstValidation.valid || !sumSecondValidation.valid"  (click) = "sum()">=</button ><b>{{sumResult |  number: '1.0-2'}}</b>
+
+<div [hidden]="sumFirstValidation.valid || sumFirstValidation.pristine">
+This number is invalid.</div>
+<p *ngIf="sumFirstValidation?.errors?.pattern">
+Only number characters are allowed.</p>
+<p *ngIf="sumFirstValidation?.errors?.minlength">
+This entry must have at least one characters.</p> <br>
+
+<div [hidden]="sumSecondValidation.valid || sumSecondValidation.pristine">
+This number is invalid.</div>
+<p *ngIf="sumSecondValidation?.errors?.pattern">
+Only number characters are allowed.</p>
+<p *ngIf="sumSecondValidation?.errors?.minlength">
+This entry must have at least one characters.</p> <br>
+
+
+<p>Sub</p>
+<input type="text" [(ngModel)]="subFirst" name="subFirstValidation" #subFirstValidation="ngModel" pattern="[-+]?[0-9]*[.,]?[0-9]+" minlength="1" > -
+<input type="text" [(ngModel)]="subSecond" name="subSecondValidation" #subSecondValidation="ngModel" pattern="[-+]?[0-9]*[.,]?[0-9]+" minlength="1" > 
+<button [disabled]="!subFirstValidation.valid || !subSecondValidation.valid"  (click) = "sub()">=</button ><b>{{subResult |  number: '1.0-2'}}</b>
+
+<div [hidden]="subFirstValidation.valid || subFirstValidation.pristine">
+This number is invalid.</div>
+<p *ngIf="subFirstValidation?.errors?.pattern">
+Only number characters are allowed.</p>
+<p *ngIf="subFirstValidation?.errors?.minlength">
+This entry must have at least one characters.</p> <br>
+
+<div [hidden]="subSecondValidation.valid || subSecondValidation.pristine">
+This number is invalid.</div>
+<p *ngIf="subSecondValidation?.errors?.pattern">
+Only number characters are allowed.</p>
+<p *ngIf="subSecondValidation?.errors?.minlength">
+This entry must have at least one characters.</p> <br>
+
+
+<p>Product</p>
+<input type="text" [(ngModel)]="byFirst" name="byFirstValidation" #byFirstValidation="ngModel" pattern="[-+]?[0-9]*[.,]?[0-9]+" minlength="1" > *
+<input type="text" [(ngModel)]="bySecond" name="bySecondValidation" #bySecondValidation="ngModel" pattern="[-+]?[0-9]*[.,]?[0-9]+" minlength="1" > 
+<button [disabled]="!byFirstValidation.valid || !bySecondValidation.valid"  (click) = "multiplication()">=</button ><b>{{byResult |  number: '1.0-2'}}</b>
+
+<div [hidden]="byFirstValidation.valid || byFirstValidation.pristine">
+This number is invalid.</div>
+<p *ngIf="byFirstValidation?.errors?.pattern">
+Only number characters are allowed.</p>
+<p *ngIf="byFirstValidation?.errors?.minlength">
+This entry must have at least one characters.</p> <br>
+            
+<div [hidden]="bySecondValidation.valid || bySecondValidation.pristine">
+This number is invalid.</div>
+<p *ngIf="bySecondValidation?.errors?.pattern">
+Only number characters are allowed.</p>
+<p *ngIf="bySecondValidation?.errors?.minlength">
+This entry must have at least one characters.</p> <br>
+
+
+<p>Quotient</p>
+<input type="text" [(ngModel)]="divFirst" name="divFirstValidation" #divFirstValidation="ngModel" pattern="[-+]?[0-9]*[.,]?[0-9]+" minlength="1" > /
+<input type="text" [(ngModel)]="divSecond" name="divSecondValidation" #divSecondValidation="ngModel" pattern="[-+]?[0-9]*[.,]?[0-9]+" minlength="1" > 
+<button [disabled]="!divFirstValidation.valid || !divSecondValidation.valid"  (click) = "division()">=</button ><b>{{divResult |  number: '1.0-2'}}</b>
+
+<div [hidden]="divFirstValidation.valid || divFirstValidation.pristine">
+This number is invalid.</div>
+<p *ngIf="divFirstValidation?.errors?.pattern">
+Only number characters are allowed.</p>
+<p *ngIf="divFirstValidation?.errors?.minlength">
+This entry must have at least one characters.</p> <br> 
+
+<div [hidden]="divSecondValidation.valid || divSecondValidation.pristine">
+This number is invalid.</div>
+<p *ngIf="divSecondValidation?.errors?.pattern">
+Only number characters are allowed.</p>
+<p *ngIf="divSecondValidation?.errors?.minlength">
+This entry must have at least one characters.</p> <br>
+
+
+
+

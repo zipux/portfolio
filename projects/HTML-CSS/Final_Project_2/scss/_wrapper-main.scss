@@ -1,0 +1,15 @@
+.wrapper {
+    @include width;
+    @include margin-center;
+  //  @include height;
+    background-color: $wrapper-bg-color;
+    display: flex; // nav bar --> img
+    text-align: center;
+
+}
+main {
+    height: 720px;
+    width: 100%;
+    padding: $padding;
+    
+ }

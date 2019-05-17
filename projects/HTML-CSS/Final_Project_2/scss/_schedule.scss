@@ -1,0 +1,198 @@
+#title-schedule {
+  color: red;
+  font-size: 2em; 
+
+}
+
+#main-calendar {
+ width: 100%;
+
+}
+
+.grid-calendar {
+background-color: transparent;
+background-image: url("..//img/schedulebackground.jpg");
+background-size: 100% 100%;
+display: grid;
+height:600px;
+grid-template:
+'day1 day2 day3 day4'
+'day5 day6 day7 day8'
+'day9 day10 day11 day12';
+grid-gap: 10px;
+padding: 0 10px;
+
+}
+
+.day1 {
+  grid-area: day1; 
+   @include calendar-cell;
+
+};
+.day2 {grid-area: day2; 
+  @include calendar-cell;
+
+};
+.day3 {grid-area: day3; 
+  @include calendar-cell;
+
+};
+.day4 {grid-area: day4; 
+  @include calendar-cell;
+
+};
+.day5 {grid-area: day5; 
+  @include calendar-cell;
+
+};
+.day6 {grid-area: day6; 
+  @include calendar-cell;
+
+};
+.day7 {grid-area: day7; 
+  @include calendar-cell;
+
+};
+.day8 {grid-area: day8; 
+  @include calendar-cell;
+
+};
+.day9 {grid-area: day9; 
+  @include calendar-cell;
+
+};
+.day10 {grid-area: day10; 
+  @include calendar-cell;
+
+};
+.day11 {grid-area: day11; 
+  @include calendar-cell;
+
+};
+.day12 {grid-area: day12; 
+  @include calendar-cell;
+
+};
+/*
+.courseOutline {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  p{
+      color :rgb(66, 66, 153);
+      background-color: wheat;
+      opacity:0.7;
+      font-size: 1.2em;
+      margin-block-start: 5px;
+  }
+
+}
+.courseOutline .courseContext {
+  visibility: hidden;
+  width: 100%;
+  background-color:transparent;
+  color: rgb(66, 66, 153);
+
+  /* Position the tooltip text - see examples below! 
+  position: absolute;
+
+}
+.courseOutline:hover .courseContext {
+  visibility: visible;
+  background-color:wheat;
+  opacity:0.7;
+
+}*/
+
+.day1, .day2, .day3,
+.day4, .day5, .day6, 
+.day7, .day8, .day9,
+.day10, .day11, .day12{
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .textanim-title {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    transition: 0.5s;
+    font-weight: bold;
+    color: red;
+    font-size: 1em;
+  }
+  
+  .day1:hover .textanim-title, 
+  .day2:hover .textanim-title, 
+  .day3:hover .textanim-title,
+  .day4:hover .textanim-title, 
+  .day5:hover .textanim-title, 
+  .day6:hover .textanim-title, 
+  .day7:hover .textanim-title, 
+  .day8:hover .textanim-title, 
+  .day9:hover .textanim-title, 
+  .day10:hover .textanim-title, 
+  .day11:hover .textanim-title, 
+  .day12:hover .textanim-title 
+   {
+    top: 10px;
+    transform: translateY(0);
+  }
+  
+  .textanim-hidden {
+    position: absolute;
+    top: 200px;
+    opacity: 0.5;
+    transition: 0.8s;
+    //text-align: center;
+    left: 0;
+    width: 230px;
+    padding: 0;
+    background: black;
+    color: white;
+    
+  }
+  
+  .day1:hover .textanim-hidden,
+  .day2:hover .textanim-hidden, 
+  .day3:hover .textanim-hidden,
+  .day4:hover .textanim-hidden,
+  .day5:hover .textanim-hidden,
+  .day6:hover .textanim-hidden,
+  .day7:hover .textanim-hidden,
+  .day8:hover .textanim-hidden,
+  .day9:hover .textanim-hidden,
+  .day10:hover .textanim-hidden,
+  .day11:hover .textanim-hidden,
+  .day12:hover .textanim-hidden
+   {
+    top: 75px; //50%;
+    transform: translateY(-50%);
+  }
+
+  ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 30px 0 10px 15px;
+    
+  }
+
+  /*
+main{flex-grow: 1}
+.Schedule{
+    display: grid;
+    // height:450px; original style
+    height: 550px;
+    grid-template:
+    'day1 day2 day3 day4'
+    'day5 day6 day7 day8'
+    'day9 day10 day11 day12';
+  grid-gap: 10px;
+  padding: 10px;
+  
+}*/

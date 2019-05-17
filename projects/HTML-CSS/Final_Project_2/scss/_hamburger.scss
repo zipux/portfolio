@@ -1,0 +1,77 @@
+.hamburger {
+
+    display: none;
+    margin-block-start: 10px;
+    @include margin-center;
+    @media (max-width: 946px){
+        display: block;
+        width: 35px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    
+        .hamburger-content {
+            height: 24px;
+        }
+
+        .text {
+            margin: -1px;
+            padding: 0;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            clip: rect(0, 0, 0, 0);
+            position: absolute;
+        }
+
+        .bar {
+            $transition: all 0.3s ease-in-out;
+            $bar-height: 3px;
+            @mixin bar($pos-neg: '') {
+                content: "";
+                width: 100%;
+                height: $bar-height;
+                top: #{$pos-neg}10px;
+                left: 0;
+                background-color: white;
+                position: absolute;
+                transition: $transition;
+                .show & {
+                    top: 0;
+                    transform: rotate(#{$pos-neg}45deg);
+                }
+            }
+
+            display: block;
+            height: $bar-height;
+            background-color: white;
+            width: 100%;
+            position: relative;
+            top: 10px;
+            transition: $transition;
+
+            .show & {
+                background-color: transparent;
+            }
+
+            &:after {
+               @include bar;
+            }
+            &:before {
+                @include bar('-');
+            }
+        }
+
+        &:focus,
+        .hamburger-content:focus {
+            outline: none;
+        }
+
+        &:focus .hamburger-content {
+            outline: 5px solid #7683C9;
+        }
+    
+    }
+}

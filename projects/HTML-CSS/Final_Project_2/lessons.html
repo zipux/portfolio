@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/turn.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>Lessons</title>
+</head>
+
+<body>
+    <div class='wrapper'>
+        <header>
+        <h1 id="logo">BCIT COMP 1950</h1>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <div class="icon">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        </div><!--icon-->
+                        <div class="name"><span data-text="Home"> Home</span></div><!--name-->
+                    </a>
+                </li>
+                <li>
+                    <a href="outline.html">
+                        <div class="icon">
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                        </div><!--icon-->
+                        <div class="name"><span data-text="Course"> Course</span></div><!--name-->
+                    </a>
+                </li>
+                <li>
+                    <a href="schedule.html">
+                        <div class="icon">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </div><!--icon-->
+                        <div class="name"><span data-text="Schedule">Schedule</span></div><!--name-->
+                    </a>
+                </li>
+                <li>
+                    <a href="lessons.html">
+                        <div class="icon">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        </div><!--icon-->
+                        <div class="name"><span data-text="Lessons"> Lessons</span></div><!--name-->
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <div class="icon">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </div><!--icon-->
+                        <div class="name"><span data-text="Contact"> Contact</span></div><!--name-->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        </header>
+
+<body class="body-lessons">
+
+    <div id="flipbook">
+        <div class="hard"></div>
+        <div class="hard"></div>
+
+        <div>
+
+            <h1>Agenda</h1>
+
+            <li><b>Introductions</b></li>
+            <li><b>Orientation</b></li>
+            <li><b>Web development tools</b></li>
+            <li><b>Standards based development</b></li>
+            <li><b>To Do</b></li>
+
+            <br><div class="title-lessons">Introductions</div>
+
+            <li><b>instructors:</b> Jeff Parker (<b><a href="mailto:jeffrey_parker@bcit.ca">jeffrey_parker@bcit.ca</a></b>),
+            Michael Whyte (<b><a href="mailto:michael_whyte@bcit.ca">michael_whyte@bcit.ca</a></b>)</li>
+            <li><b>web site:</b> this is it</li>
+            <li><b>all about you...</b></li>
+            <li>your name</li>
+            <li>your background</li>
+            <li>what do you hope to achieve in this course? Be specific!</li>
+
+            <div class ="sub-title-lessons">Course Overview</div>
+            <p>Learn more <b>about the course</b> to help you determine if this is the right class for you.</p>
+
+            <div class ="sub-title-lessons">Orientation: Sharefile</div>
+            <p>BCIT lab computers are re-imaged each day. Files you save on the local C: drive of a lab computer will
+                be erased after the computer power is cycled.</p>
+
+                <div class ="sub-title-lessons">Options For Saving Files:</div>
+            <li>Use <b><a href="http://kb.bcit.ca/sr/sharefile/2052.shtml">BCIT Sharefile</a></b> to save your work</li>
+            <li>Save your work to your personal USB or cloud storage account</li>
+            <li>Use your own laptop in class, and dont use the BCIT lab computers</li>
+
+        </div>
+
+        <div>
+            <div class="title-lessons">Orientation: Course Materials</div>
+
+            <p>COMP 1950 homework assignments, quizzes, in class exercises and example code can be accessed via <b><a
+            href="https://learn.bcit.ca/">Desire 2 Learn</a></b> (D2L). Use your BCIT student number and
+            password to access D2L. Course materials will become avilable as the course progresses. It is your
+            responsibility to log in and download files as they become available.</p>
+
+            <p>If you have difficulty gaining access, consult the <b><a href="https://www.bcit.ca/distance/learnersupport/d2lhelp.shtml">D2L
+            help documentation</a></b>, or contact BCIT Tech help desk at <b>604-412-7444</b> (Toll free:
+            <b>1-800-351-5533</b>).</p>
+
+            <div class ="sub-title-lessons">Orientation: Web space</div>
+            <p>Each student will get a personal webspace where you will publish your homework assignments. This is not
+                a continuation of your COMP1850 site (if you had one). This site is primarily for you to house your
+                exercises, assignments and group work. Make it a site that is usable and functional.</p>
+            <li>Your instructor will create webspaces for each of you.</li>
+            <li>Email your instructor this information:</li>
+            <li>your myBCIT email - eg: yourname123@my.BCIT.ca</li>
+            <li>your student number - eg: A00123456</li>
+            <li>a case sensitive password you will remember - ???</li>
+            <li>Take the name portion of your <b>my.bcit.ca</b> email address and use it at the end of the URL
+                described below (eg: if your email address is '<i>yourname123@my.bcit.ca</i>', your email name is '<i>yourname123</i>',
+                so your url would be '<i>http://bcitcomp.ca/students/yourname123</i>'<br />
+                For example: <b>http://bcitcomp.ca/students/your_bcit_email_name</b></li>
+
+            <div class ="sub-title-lessons">Connect to your bcitcomp.ca account via FTP</div>
+            <p>Use Filezilla, or any FTP client to connect to bcitcomp.ca. The bcitcomp.ca server provides you with a
+                space on the internet where you can publish your homework and assignments.</p>
+            <p>1. Choose: <b>File-&gt;SiteManager-&gt;New Site</b>, then describe the FTP server, eg "bcitcomp.ca"</p>
+            <p>2. Host: <b>bcitcomp.ca</b></p>
+            <p>3. Port: <b>21</b></p>
+
+        </div>
+
+        <div>
+
+            <p>4. User: <b>{yourBCITStudentNumber}@bcitcomp.ca</b> (use an uppercase <b>A</b> when typing your BCIT
+                student number)</p>
+            <p>5. Password: <b>???</b></p>
+            <p>6. Servertype: <b>FTP</b> File Transfer Protocol</p>
+            <p>7. LogonType: <b>Normal</b></p>
+            <p>8. Click: <b>Connect</b></p>
+            <p>9. If you experience connectivity problems, re-check your input, or ask your instructor for assistance.</p>
+
+            <div class="img-flipbook">
+                <img src="img/filezilla.png" width="520px" height="410px">
+            </div>
+
+        </div>
+
+        <div>
+            <div class="title-lessons">Tools: Visual Studio Code</div>
+            <p>There are several development tools to choose from. In COMP 1950 we will use the open source Integrated
+                Devlopment Environment (IDE) from Microsoft called <b><a href="https://code.visualstudio.com/">Visual
+                Studio Code</a></b> (VS Code). This is more than a simple text editor, it provides robust code
+                editing, maintenance and testing features, as well as supporting plugins to further increase it's
+                capabilities.</p>
+
+            <div class ="sub-title-lessons">Lab Computers</div>
+            <p>VS Code should already be installed on COMP1950 lab computers. The executable is found at <b>C:/Program
+                    Files/Microsoft VS Code/Code.exe</b></p>
+
+            <div class ="sub-title-lessons">Laptop / Home Desktop</div>
+            <p><b><href="#alt-downloads">Download VS Code</a></b> for Windows, Mac or Linux.</p>
+
+            <div class ="sub-title-lessons">Exploring VS Code</div>
+            <p>Your instructor will demonstrate some of it's capabilities in class. On your own time, you may wish to
+                review the <b><a href="https://code.visualstudio.com/docs">help documentation</a></b> 'Get Started'
+                section to give yourself a better understanding of some of the basic features and functions provided by
+                VS Code.</p>
+
+            <li><b><a href="https://code.visualstudio.com/docs/introvideos/basics">Setup and basics of VS Code</a></b></li>
+            <li><b><a href="https://code.visualstudio.com/docs">VS Code help documentation</a></b></li>
+
+            <div class ="sub-title-lessons">Tools: Browser-based development</div>
+            <p>There are three major web browser platforms to consider:</p>
+            <b><a href="https://www.mozilla.org/en-US/">Mozilla</a></b>
+            <li>This is the platform that <b><a href="https://www.mozilla.org/en-US/firefox/">Firefox</a></b> runs on</li>
+            <li>Mozilla Foundation's web platform created by web developers</li>
+            <li>Gecko rendering engine: fast and progressive</li>
+            <li>Excellent level of standards compliance</li>
+            <li>Corporate independence</li>
+            <li>No built-in development tools</li>
+            <li>Plethora of add-ons that make web development easy</li>
+            <li>Add-ons have a downside: bloat</li>
+
+        </div>
+
+        <div>
+            <br>
+            <b><a href="http://www.webkit.org/">WebKit</a></b>
+            <li>This is the platform that gives us <b><a href="http://www.google.com/chrome">Chrome</a></b>, <b><a href="http://www.apple.com/safari/">Safari</a></b> and <b><a href="http://www.opera.com/">Opera</a></b>, with a few other smaller browsers out there as well.</li>
+            <li>Excellent platform that is very fast and standards compliant</li>
+            <li>Third parties can download the source, make local adjustments and release their own version, as Google and Apple have both done</li>
+            <li>Standalone version can be downloaded at any time for the latest release</li>
+            <li>Development is done via the built-in Developer Tools</li>
+            <li>Initially a thin environment, recent releases have made Webkit-based browsers excellent for developers</li>
+            <li>Macintosh based developers may need to <b><a href="http://www.jonhartmann.com/index.cfm/2011/4/28/Enabling-Safari-Developer-Tools">enable web developer options</a></b> in Safari before accessing the developer tools</li><br>
+
+            <b><a href="https://www.microsoft.com/en-ca/">Microsoft</a></b>
+            <li>The vendor for <b><a href="https://www.microsoft.com/en-ca/windows/microsoft-edge">Edge</a></b> and <b><a href="https://www.microsoft.com/en-ca/download/internet-explorer.aspx">Internet Explorer</a></b></li>
+            <li>Microsoft's Edge is a major improvement on it's previous browser offerings.</li>
+            <li>Edge offers very good standards compliance and browser tools.</li>
+            <li>Do <b>NOT</b> use Internet Explorer as your development browser. It is one the least standards compliant of the browsers. It is also no longer supported with updates.</li>
+        
+            <p>Remember to test your work in as many browsers as you can! <a href="http://browsershots.org/"><b>BrowserShots</b></a> allows you to do basic testing for earlier versions of Chrome, Firefox, Safari, and Opera. If you need to test for early iterations of IE, try: <a href="http://netrenderer.com/"><b>Netrenderer</b></a></p>
+            <div class ="sub-title-lessons">Tools: Extensions</div>
+            <p>Extensions can add more functionality and features to your development browser.</p>
+            <p>The <b><a href="http://chrispederick.com/work/web-developer/">Web Developer Toolbar</a></b> is available for Chrome, Firefox and Opera. Some useful features include:</p>
+        
+        </div>
+    
+        <div>
+            <li>Disable styles - by embedded/linked/inline as well as all styles, or just a single sheet</li>
+            <li>Edit CSS &amp; HTML - Make live changes to your CSS or HTML!</li>
+            <li>Images - outlining, file sizes, alt information... lots more</li>
+            <li>Form detail - useful for working with form elements</li>
+            <li>Cookie examination and manipulation</li>
+            <li>Built in validators</li>
+            <li>Line Guides &amp; Rulers</li>
+            <li>Element inspector</li>
+            <p>Search online to see what is available for your development browser:</p>
+            <li>Ad blockers</li>
+            <li>Password managers</li>
+            <li>Drawing on HTML pages</li>
+            <li>Text to speech</li>
+            <li>Etc, etc!</li>
+
+            <div class ="sub-title-lessons">Browser Based Diagnostic Tools</div>
+            <p>As web pages get more complex, it can become difficult figuring out what is going on. For example, CSS rules that override other CSS rules, if spread across several files, can be challenge to make sense of. Having a diagnostic tool to assist in developing will make it easier to examine every detail of web pages.</p>
+            <p>Most modern browsers have some kind of development environment that can be turned on or triggered via extensions and/or plug-ins.</p>
+
+            <div class ="sub-title-lessons">Web Browser Tools</div>
+            <li><b><a href="https://developer.mozilla.org/son/docs/Tools">Firefox</a></b></li>
+            <li><b><a href="https://developers.google.com/chrome-developer-tools/">Chrome</a></b></li>
+            <li><b><a href="https://developer.apple.com/safari/tools/">Safari</a></b></li>
+            <li><b><a href="https://docs.microsoft.com/en-us/microsoft-edge/f12-devtools-guide">Edge</a></b></li>
+           
+        </div>
+
+        <div>
+            <p>Get familiar with using one of these tools. They are invaluable for understanding code and for finding, diagnosing, and fixing problems with code. You will be required to use them in the classes ahead. Practice adding/editing/removing both HTML and CSS using your development browser's built in tools.</p>
+            
+            <div class ="sub-title-lessons">Typical Features</div>
+            <li><b>F12</b> key will toggle open/close the tools in most browsers</li>
+            <li>The <b>Elements</b>/<b>Inspector</b> tab provides an overview of the HTML and CSS</li>
+            <li>The <b>Select</b> tool can be used to analyze the structure of the page and understand he status of box models</li>
+            <li>The <b>Console</b> will display Javascript behaviours and error messages</li>
+
+            <p><b>NOTE:</b> changes you make with the tool are <b>client based</b>, and do not affect the server side HTML/CSS files. Client side changes made with this tool are temporary (they will be lost upon page refresh).</p>
+
+            <p>The capabilities of these browser tools go well beyond outlining, examining and editing. They provide deep troubleshooting capabilities of the HTTP network, javascript and even XHR (XMLHttpRequest).</p>
+
+            <div class ="sub-title-lessons">Standards: W3C</div>
+            <p>Just as those who manufacture physical goods are expected to follow the <b><a href="http://www.iso.org/">International Organization for Standards (ISO)</a></b>, web developers are expected to adhere to the standards described by the <b><a href="http://www.w3.org/">World Wide Web Consortium (W3C)</a></b></p>
+            
+            <div class ="sub-title-lessons">W3C: World Wide Web Consortium</div>
+            <li>Web standards have gone through the same process that the ISO went through</li>
+            <li>Many companies see the benefits of interoperability - a few are still "forging their own"</li>
+            <li>Many companies have standards: Adobe, Microsoft, Apple, Ford, GM</li>
+            <li>Many are proprietary standards, and are not supported by other companies</li>
+        </div>
+
+
+        <div>
+            <li>W3C - World Wide Web Consortium: founded by Tim Berners-Lee to try and uniformly put forward standards through a single communication vehicle</li>
+            <li>Leading browser makers did not follow, initially</li>
+            <li>Designers were 'taking sides' in the browser wars: users were losers</li>
+            <li>Most modern browsers are fairly standards compliant</li>
+
+            <div class ="sub-title-lessons">W3C Goals</div>
+            <p>1. <b>Universal Access</b>: To make the Web accessible to all by promoting technologies that take into account the vast differences in culture, languages, education, ability, material resources, access devices, and physical limitations of users on all continents;</p>
+            <p>2. <b>Semantic Web</b>: To develop a software environment that permits each user to make the best use of the resources available on the Web;</p>
+            <p>3. <b>Web of Trust</b>: To guide the Web's development with careful consideration for the novel legal, commercial, and social issues raised by this technology.</p>
+        
+            <p>Why web developers should follow W3C standards:</p>
+            <li>Your pages will be viewable in the largest number of browsers</li>
+            <li>Increase interoperability with other clients (search engines, screen readers)</li>
+            <li>Web sites will gracefully degrade as support for CSS or other presentation layers are absent.</li>
+            <li>Code that doesn't follow standards cannot be expected to behave predictably in the various web browsers</li>
+            <li>Non standard code is hard to support</li>
+            <li>Re-engineering and/or maintaining poorly coded websites can be very difficult, costly and time consuming</li>
+
+            <div class ="sub-title-lessons">Discussion:</div>
+            <li>What is the current W3C recommended version for HTML?</li>
+            <li>What is the current W3C recommended version for CSS?</li>
+            <li>What are the consequences of using a non-standard version?</li>
+
+        </div>
+
+        <div>
+            <p>Learn more abou the W3C and standards based devlopment from the <b><a href="http://www.webstandards.org/learn/faq/">Web Standards Project</a></b>.</p>
+            
+            <div class ="title-lessons">Standards: Web Development</div>
+            <div class ="sub-title-lessons">Three goals of standards-driven web development:</div>
+            <p>1. Compatibility (creating web pages that work well in all browsers)</p>
+            <p>2. Portability (writing code that works well in any computing environment/operating system)</p>
+            <p>3. Accessibility (produce web pages that are optimized for search engines, screen readers, etc)</p>
+
+            <div class ="sub-title-lessons">Requirements</div>
+            <li>HTML + CSS + DOM = Agile Web Sites</li>
+            <li>Structurally valid HTML code (eg: tags that open are closed. parent-child tag relationships are valid, etc)</li>
+            <li>Logically valid HTML code (eg: ids are not applied more than once per page)</li>
+            <li>Syntactically valid CSS code</li>
+            <li>Use external CSS to develop sites that separate content (HTML) from presentation (CSS)</li>
+            <li>Using Semantic Markup to establish content relationships and logical deployment of content</li>
+            <li>Use a single codebase (no browser sniffing, forked code)</li>
+            <li>Consider special needs users with screen readers. A common browser used with screen reader software is <a href="http://www.webbie.org.uk/"><b>Webbie</b></a></li>
+
+            <div class ="sub-title-lessons">Standards: File and Folder Naming</div>
+            <p>HTTP urls cannot contain certain characters, and certain characters will cause unwanted effects and behaviours when used in a url. Follow best practices for all file and folder names:</p>
+            <li>File and folder names should <b>NOT</b> contain:</li>
+            <li>Capital letters</li>
+            <li>Spaces</li>
+
+        </div>
+
+        <div>
+            <li>Special characters: <b>! @ # $ % ^ &amp; * ( ) + { } [ ] : ; " &lt; &gt; ? |</b> etc...</li>
+            <li>Acceptable non-alphanumeric characters: <b>. _ - ~</b></li>
+            <li>Filenames should either be descriptive of the file contents, or use the default page name: <b>index.htm</b>, <b>index.html</b> or <b>index.shtml</b> (or whatever your server default is)</li>
+            <li>Folder names should always be descriptive. Folder structure should be logical (eg: <b>/hockey/nhl/canucks</b>).</li>
+    
+            <div class ="sub-title-lessons">Standards: File Management</div>
+            <li>Including an <b>index.html</b> file in every folder on your server will ensure users cannot go snooping around your filesystem. the index.html file can be a blank HTML page if you like, as long as the user does not see a list of files when they request a folder</li>
+            <li>Browser caching can reduce excessive request/response transactions between client and server. however, some browsers may cache things like the CSS, so if the styles have changed since caching the client may not get the latest styles.</li>
+            <li><b>Ctrl + F5</b> (<b>Cmd + F5</b> for Mac) will force a page reload. Very useful when developing on a localhost http server.</li>
+            <li>If a file name has changed, the browser will have to make a new request from the server. versioning your file names will ensure users always have the latest version of any file (for example <b>styles_1.0.css, styles_1.1.css, styles_1.2.css, styles_2.0.css</b> etc)</li>
+            <li>If there are files/pages on your server no longer being used, be sure to either remove them or locate them in a place where users are not going to accidentally find them</li>
+               
+            <div class ="sub-title-lessons">Standards: Code Style and Organization</div>
+            <p>In COMP1950 students are expected to present a readable, well organized code style:</p>
+            <li>Comment <b>all code</b> with your name (or nickname if you prefer). Do this for all text based files (<b>.html</b>, <b>.css</b>, <b>.js</b>, <b>.php</b>, etc)
+            
+        </div>
+        
+        <div>
+            <div class="img-flipbook2">
+                <img src="img/doctype.png"  width="520px" height="320px">
+            </div> 
+                
+            </li>
+            <li>In HTML, use carriage return and tabs to indicate parent-child tag relationships. Likewise, code your CSS to make it easy to see which rules are applied to each selector.<br />
+            </li>
+
+            <div class="img-flipbook2">
+                <img src="img/body_tag.png" width="430px" height="290px">
+            </div> 
+            
+        </div>
+
+        <div> 
+            <li>Separate different file types into folders. At minimum, keep all non-html files in their own folder. If you like you can make a dedicated 'html' folder for your <b>.html</b> files as well. <br/></li>
+            <img src="img/folders.png" width="380px" height="150px">
+            <li>Use the <b>.html</b> extension for all HTML files (not <b>.htm</b>). Use the typical extension for all other text based files.</li>
+            <li>Write structurally valid HTML code: <b><a href="http://validator.w3.org/">W3C HTML validator</a></b></li>
+            <li>Write syntactically valid CSS code: <b><a href="http://jigsaw.w3.org/css-validator/">W3C CSS validator</a></b></li>
+            <li>Include a <b><a href="http://validator.w3.org/check?uri=referer">referer link</a></b> on all your HTML pages: <br />
+            <b>&lt;a href="http://validator.w3.org/check?uri=referer"&gt;validate&lt;/a&gt;</b></li>
+
+            <div class ="sub-title-lessons">Semantic Markup</div>
+            <p>Highly <b><a href="https://html.com/semantic-markup/">semantic HTML content</a></b> is crucial for usability, accessibilty and search engine optimization.</p>
+                
+            <div class ="sub-title-lessons">What is Semantic Markup?</div>
+            <li>The practice of organizing your content into a structured hierarchy</li>
+            <li>Using appropriate tags to explain and describe the content</li>
+            <li>H1 ... 6 tags for summary headings</li>
+            <li>UL tags for unsorted, unranked, related points</li>
+            <li>OL tags for sorted, ranked, related points</li>
+            <li>Paragraph tags instead of double BR tags</li>
+            <li>HTML tables used for semantic value (tabular data), not for layouts</li>
+            <li><b>IMPORTANT</b>: Separate Content (HTML) from Presentation (CSS)</li>
+
+        </div>
+
+        <div>
+            <div class ="sub-title-lessons">Building Content Relationships</div>
+            <li>Use appropriate tags for headings, content, sub-content, lists</li>
+            <li>This builds a relationship that descends from the title of the page</li>
+            <li>Each section is a discrete piece of information</li>
+            <li>Headings summarize the following content</li>
+            <li>Citations, quotes, code samples can be contextualized by nearest heading</li>
+    
+            <div class ="sub-title-lessons">Logical vs. Physical Styles</div>
+            <li>Tend to display identically in browsers, but are fundamentally different</li>
+            <li>Physical styles define what content <i>looks like</i></li>
+            <li>Logical styles define what content <i>is</i></li>
+            <li>Logical styles are important for screen readers, physical styles are not</li>
+            <li>Given a choice, logical styles are usually preferred</li>
+            <li>Some physical styles:</li>
+    
+            <li><b>b</b> - Bold</li>
+            <li><b>i</b> - Italic</li>
+            <li><b>s</b> - Strikethrough</li>
+            <li><b>u</b> - Underline</li>
+
+            <div class ="sub-title-lessons">Logical Styling</div>
+            <li>Best way to markup content for long-term usage</li>
+            <li>Use CSS to change style (and some behaviour)</li>
+            <li>Use DOM to change behaviour (via scripting)</li>
+            <li>Requires thinking ahead</li>
+            <li>Examples of logical styles:</li>
+             
+            <li><b>strong</b> - <b>Increase importance</b></li>
+            <li><b>em</b> - <i>Add Emphasis</i></li>
+            <li><b>code</b> - <b>Code sample</b></li>
+            <li><b>kbd</b> - Keyboard entry</li>
+
+        </div>
+
+        <div>
+            <li><b>samp</b> - Programming sample</li>
+            <li><b>var</b> - <i>Variable</i></li>
+            <li><b>cite</b> - <i>Citation</i></li>
+            <li><b>dfn</b> - <i>Definition</i></li>
+            <li></li><b>abbr</b> - Abbreviation</li>
+            <li><b>acronym</b> - Acronym</li>
+            <li><b>del</b> - <del>Deleted text</del></li>
+            <li><b>ins</b> - <ins>Inserted text</ins></li>
+            
+            <div class ="sub-title-lessons">>Key Advantages Of Semantic Content</div>
+            <li>Content is relational - context can be determined easily</li>
+            <li>Extracting important pieces of information is simple (CITE or CODE tags for example)</li>
+            <li>Search engine optimization (SEO)</li>
+            <li>Syndication</li>
+            <li>Big win for frameworks such as jQuery</li>
+            <li>Screen reader friendly</li>
+            <li>Increased Accessibility</li>
+            <li>Separating style (CSS) from structure (HTML), makes it easier to maintain</li>
+                
+        </div>
+
+        <div> 
+            <div class ="title-lessons">To Do</div>
+            <li>Download, review, and complete the homework assignment from <b><a href="https://learn.bcit.ca/">D2L</a></b></li>
+            <li>Confirm you have access to your <b><href="#student_webspace">online webspace</a></b> and that your FTP credentials are valid</li>
+            <li>Be sure you know how to add/edit/remove HTML and CSS using a browser tool</li>
+            <li>Install VS Code on your home computer or laptop. Explore some of the accompanying help documentation to familiarize yourself with how to code your HTML and CSS using this tool.</li>
+         
+            <li><b><href="#alt-downloads">Download VS Code</a></b></li>
+            <li><b><a href="https://code.visualstudio.com/docs/introvideos/basics">Setup and basics of VS Code</a></b></li>
+            <li><b><a href="https://code.visualstudio.com/docs">VS Code help documentation</a></b></li>
+            <p>...and yes, there will be a practical, open book quiz at the start of session #2! (hint: practice using a browser based diagnostic tool)</p>
+
+        </div>
+
+        <div>
+            <h1>Agenda</h1>
+
+            <li><b>Charsets</b></li>
+            <li><b>HTML</b>, <b>XHTML</b>, <b>HTML5</b></li>
+            <li><b>Semantics</b></li>
+            <li><b>Forms</b>, <b>SVG</b>, <b>Multimedia</b></li>
+            <li><b>To Do</b></li>
+
+                
+            <div class ="title-lessons">Character Sets And Languages</div>
+            <p>The W3C recommends the <b><a href="https://www.w3.org/International/questions/qa-choosing-encodings">UTF-8 charset</a></b> for web development. It includes an impressive array of languages and special characters, and is well supported in common devices.</p>
+            
+            <div class ="sub-title-lessons">Assign Character Set</div>
+            <p>If it is not specified, a web browser will choose the character set it thinks is most appropriate, but it is a better practice for the developer to ensure the correct character set by applying the <b>meta</b> tag to the <b>head</b> section of every HTML page:</p>
+            <p><b>&lt;meta charset="utf-8" /&gt;</b></p>
+            <li>Write all your text-based code (<b>.html</b>, <b>.css</b>, <b>.js</b>, <b>.php</b>, etc) in UTF-8. At development time, ensure your text editor is saving files in this format. This setting is usually found in the application's Preferences menu option.</li>
+            <li>Unless your audience includes very old browsers, you can <b><a href="https://tools.oratory.com/altcodes.html">code special characters</a></b> directly into the HTML (you dont need to use HTML entities for most special characters).</li>
+            <li>You cannot copy-paste rich text (such as Microsoft Word, or WordPad) into your HTML. The rich text formatting may result in an unreadable mess.</li>
+            <li>An HTTP server can over-ride your charset preferences when it generates the HTTP header. Details on how to control this will be discussed later in this course.</li>
+         
+        </div>
+
+        <div>
+            <div class ="title-lessons">HTML lang Attribute</div>
+            <p>Use the <b>lang=""</b> attribute to <b><a href="https://www.w3.org/International/questions/qa-html-language-declarations">declare the language in HTML</a></b>. This is usually applied to the <b>html</b> element. Assigning the appropriate language code will apply to all contained content, unless over-ridden with another <b>lang=""</b>.</p>
+            <p>Use the language abbreviations from the <b><a href="http://www.loc.gov/standards/iso639-2/php/code_list.php">standard ISO 639-1</a></b> code set (don't use ISO 639-2).</p>
+                
+            <div class ="sub-title-lessons">HTML</div>
+            <p>What started as a language defined by <b><a href="http://www.w3.org/MarkUp/SGML/">SGML</a></b> <i>(Standard Generalized Markup Language)</i>, HTML is used to mark up billions of pages, making up the bulk of the web.</p>
+    
+            <li>Late 1991, Tim Berners-Lee releases the first iteration of what would become HTML 2.0 (there was no real 1.0+)</li>
+            <li>HTML was a language created at the dawn of the Web, using SGML (Standard Generalized Markup Language) as a template</li>
+            <li>Over the next decade, various additions, improvements and changes are introduced</li>
+            <li><b><a href="https://www.w3.org/TR/1999/REC-html401-19991224/">HTML 4.01</a></b> released in December 1999</li>
+            <li>Initially used for documents and a place for the technically inclined, the web did not have the international pervasiveness it does today</li>
+            <li>Most developers were new to the language and there were no real classes in it</li>
+            <li>People had to learn as they went along</li>
+            <li>A lot of early sites are poorly designed</li>
+
+            <div class ="sub-title-lessons">HTML 4.01 template</div>
+            <p>The problem with the state of HTML then was its reputation as a loose language. Poorly structured code would be rendered differently across user agents, leading to forked code and less predictable results.</p>
+
+        </div>
+
+        <div>
+            <div class ="title-lessons">XHTML</div>
+            <p>The <b><a href="https://www.w3.org/TR/2002/REC-xhtml1-20020801/">XHTML specification</a></b> was the result of rewriting <b><a href="https://www.w3.org/TR/1999/REC-html401-19991224/">HTML 4.01</a></b> using the ruleset derived from <b><a href="https://www.w3.org/XML/">XML</a></b></p>
+    
+            <li>HTML 4.01 + XML = XHTML 1.0</li>
+            <li>X = eXtensible</li>
+            <li>X = XML related</li>
+            <li>Better, more predictable coding patterns.</li>
+            <li>Verifiable or "well-formed" code can be produced.</li>
+            <li>Forces a higher standard of HTML.</li>
+            <li>Predictable behavior across user agents.</li>
+            <li>Porting to HTML5 is easy (if you also observe <b>semantic</b> guidelines).</li>
+
+            <div class ="sub-title-lessons">XHTML Rules:</div>
+            <li>All elements must be properly nested</li>
+            <li>This is not valid: <b>&lt;p&gt;&lt;b&gt;Bolded Text&lt;/p&gt;&lt;/b&gt;</b></li>
+            <li>This can be a problem with things like Lists &lt;ol&gt; and &lt;ul&gt;.</li>
+            <li>Especially when closing the List Item &lt;li&gt; tag that contains the &lt;ul&gt; or &lt;ol&gt; tag.</li>
+            <li>All tags must close</li>
+            <li>Example: <b>&lt;p&gt;Some text here&lt;/p&gt;</b></li>
+            <li>Empty Elements are closed as well: <b>&lt;br /&gt;</b> or <b>&lt;img src="#" /&gt;</b></li>
+            <li>An extra space is required before the slash to work with all browsers.</li>
+            <li>All tag names must be in lower case</li>
+            <li><b>&lt;Img Src="some_image.gif"&gt;</b> is not valid</li>
+            <li>Attribute names are always in lower case</li>
+            <li><b>&lt;p ALIGN="center"&gt;</b> should be <b>&lt;p align="center"&gt;</b></li>
+            <li>All attributes must be quoted</li>
+            <li><b>&lt;body bgcolor=black&gt;</b> will not work, you need: <b>&lt;body &gt;</b></li>
+            <li>Attributes cannot be minimized</li>
+            
+        </div>
+
+
+
+        <div>
+            <li><b>&lt;input type="checkbox" checked&gt;</b> cannot be used. The valid code is: <b>&lt;input type="checkbox" checked="checked" /&gt;</b></li>
+            <li>Name Attribute is no longer used (except with forms). Replace "name" with "id".</li>
+            <li><b>&lt;img src="picture.gif" name="myimage" /&gt;</b> will not validate. Use <b>id="myimage"</b> instead.</li>
+            <li>Mandatory Elements: Every XHTML document <b>must have</b> these elements:</li>
+            <li><b>&lt;html&gt;</b></li>
+            <li><b>&lt;head&gt;</b></li>
+            <li><b>&lt;title&gt;</b></li>
+            <li><b>&lt;body&gt;</b></li>
+            <li>The <b>&lt;!DOCTYPE&gt;</b> declaration <i>must</i> be there, but it is <i>part</i> of the document itself rather than an element of the document.</li>
+            <li>Documents must be well-formed</li>
+            <li>The document must conform to all of the above rules</li>
+            <li>Optional XML declaration</li>
+            <li>Not <i>required</i>, but good practice:</li>
+            <li><b>&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;</b></li>
+            <li>Optional Element: An XHTML document should also declare the type and character encoding in the head section to ensure the server sends the correct content-type header: <br />
+            <b>&lt;meta http-equiv="Content-Type" content="text/html" charset="UTF-8"&gt;</b></li>
+            
+            <div class ="sub-title-lessons">XHTML 1.0 template</div>
+
+            <div class ="title-lessons">HTML5</div>
+            <p>As of October 28, 2014, <b><a href="http://www.w3.org/TR/html5/">HTML5 is the official W3C recommendation</a></b></p>
+            <p>HTML5 is more evolutionary then revolutionary. The bulk of previous HTML elements and attributes are maintained, with a few deprecations, and several additions.</p>
+
+        </div>
+
+        <div>
+            
+            <p>Significant features include:</p>
+            <li>Ultra simple Doctype: <b>&lt;!DOCTYPE html&gt;</b></li>
+            <li>Specifies how browsers should behave with imperfect code</li>
+            <li>Ability to embed <b><a href="https://www.w3.org/XML/">XML</a></b>, <b><a href="http://www.w3.org/Math/">MathML</a></b> or <b><a href="http://www.w3.org/Graphics/SVG/">SVG</a></b> markup.</li>
+            <li>Standardized Javascript API increases client side script compatibility across browsers</li>
+            <li>Backwards compatible - older versions of HTML can effectively be updated by simply changing the doctype to HTML5</li>
+            <li>Guiding principles: Enhance semantic coding, Support existing content, Pave the cowpaths</li>
+
+            <div class ="sub-title-lessons">HTML 5 template</div>
+            <div class ="sub-title-lessons">Paving the Cowpaths</div>
+
+            <p>Common developer practices have been simplified</p>
+             <li>Finally a DOCTYPE we can all remember:<br />
+            <b>&lt;!DOCTYPE html&gt;</b></li>
+            <li>Declaring the character encoding is easier:<br />
+            <b>&lt;meta charset="utf-8"&gt;</b></li>
+            <li>When linking to external stylesheets the <b>type</b> attribute is not required:<br />
+            <b>&lt;link rel="stylesheet" href="style.css" /&gt;</b></li>
+            <li>When embedding CSS the <b>type</b> attribute is not required:<br />
+            <b>&lt;style&gt;&lt;/style&gt;</b></li>
+            <li>Including javascripts is simplified as well (<b>type</b> attribute is not required)<br />
+            <b>&lt;script src="javascripts.js"&gt;&lt;/script&gt;</b></li>
+
+            <div class ="title-lessons">HTML5: Enhanced Semantic Coding</div>
+            <p>It is crucial for all HTML content to be <b><a href="https://en.wikipedia.org/wiki/Semantic_HTML">semantically marked up</a></b>. This is how browsers, search engines, and screen readers make sense of online content.</p>
+            <p>HTML5 provides more than just adjustments to the markup, there are new, powerfully semantic elements:</p>
+           
+        </div>
+
+
+        <div>
+            
+            <li><b><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article">&lt;article&gt;</a></b> is an independent piece of content in a document (it could stand alone if removed from the page). an <b>article</b> might be a blog post, forum thread, news story, collection of product information, etc</li>
+            <li><b><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside">&lt;aside&gt;</a></b> is for content "only slightly" related to the main page content. <b>aside</b>s fill the role of a sidebar. if the content could be removed without reducing the meaning of the main content of the HTML document, then use an <b>aside</b></li>
+            <li><b><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header">&lt;header&gt;</a></b> and <b><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer">&lt;footer&gt;</a></b> are for the header or footer of a page</li>
+            <li><b><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">&lt;nav&gt;</a></b> represents an area for navigation</li>
+            <li><b><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main">&lt;main&gt;</a></b> used for containing content that is focused on the central topic of the page. this content is usually unique to the page, and not shared by other pages (main will usually NOT contain navigations, footers, sidebars, etc)</li>
+            <li><b><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure">&lt;figure&gt;</a></b> will likely contain an <b>img</b> or graphic. self-contained content (could usually be removed from the page and stand on its own). allows for captioning of embedded content like an image graphic or video. if you want to associate a caption, add a <b>figcaption</b> child</li>
+            <li><b><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption">&lt;figcaption&gt;</a></b> used as first or last child of <b>figure</b> to define the caption or legend for a figure</li>
+             
+            <p>These represent some big changes in HTML, allowing for more flexibility in coding and specifying content. Many of these will replace and reduce the need for many <b>div</b> tags. eg: instead of the typical <b>&lt;div id="header"&gt;</b>, use <b>&lt;header&gt;</b>.</p>
+            <p>Having trouble deciding which tag to use for what content? Try this <b><a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf">HTML5 flowchart</a></b>.</p>
+            
+            <div class ="sub-title-lessons">HTML5 Semantic Alterations</div>
+            <p>HTML5 also brings a few notable semantic alterations to older tags:</p>
+            <li><b><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">&lt;a&gt;</a></b> though still an inline tag, it is now ok to nest multiple block level tags (headings, paragraphs etc) inside an anchor tag</li>
+            <li><b><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/small">&lt;small&gt;</a></b> no longer a 'physical' tag for smaller sized print, it now has semantic value: meaning 'small print', i.e. 'legalese'. the <b>big</b> element has been deprecated</li>
+
+        </div>
+
+        <div>
+            <li><b><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b">&lt;b&gt;</a></b> no longer means 'render bold'. now it means the text is 'stylisticly offset from the normal text', without conveying any extra importance. to convey extra importance, use <b><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong">&lt;strong&gt;</a></b></li>
+            <li><b><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i">&lt;i&gt;</a></b> now means the text is 'in an alternate voice or mood', without conveying any extra emphasis. to convey extra emphasis, use <b><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em">&lt;em&gt;</a></b></li>
+            <li>Deprecated tags: <b>&lt;big&gt;, &lt;font&gt;, &lt;strike&gt;</b>, and a few more. Developers should use CSS instead of these deprecated tags.</li>
+            <li>Deprecated attributes: <b>align, bgcolor, border, height, size, type, width</b> and more. Developers should use CSS instead of these deprecated attributes.</li>
+            
+            <div class ="title-lessons">HTML5 Content Models</div>
+            <p>Pre-HTML5, there were basically two categories of tags: inline and block. HTML5 intoduces a more nuanced set of categories that allow for greater semantic sectioning of content. The content model will help the browser to determine the semantics of your content.</p>
+            
+            <div class ="sub-title-lessons">Content Models</div>
+            <li>text-level content: most inline tags</li>
+            <li>grouping content: most block tags</li>
+            <li>replaced content: all the form widgets and related tags</li>
+            <li>embedded content: video, audio, canvas</li>
+            <li>sectioning content: new structural, semantic options</li>
+
+            <div class ="sub-title-lessons">Sectioning Content</div>
+            <p>The <b><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section">&lt;section&gt;</a></b> tag can be used to semantically group content. It can remove ambiguity when a page is being processed by the browser, a screen reader, or search engine.</p>
+            <p>For example, imagine you have created the following code:</p>
+            <p>Since content that follows a heading is presumed to be associated with that heading, the code above carries plenty of semantic value already. But, if the <b>small</b> tag's content is intended to apply to all cities, a browser has no way of knowing that. It will instead assume the <b>small</b> tag is associated with the preceding heading (<b>&lt;h3&gt;Tokyo&lt;/h3&gt;</b>)</p>
+        </div>
+
+        <div>
+            <p>Use the <b>section</b> tag to explicitly demarcate the start and end of the related content:</p>
+            <p>This new sectioning will inform the browser that the <b>small</b> is associated with the <b>h1</b></p>
+            <p>In HTML5, each piece of sectioned content has its own self-contained outline. This means you wont need to worry as much about which level heading tag to use. You can use an <b>h1</b> inside a section and it will be treated as the heading of the section, and have lesser semantic impact than an <b>h1</b> that is at a higher level.</p>
+                
+            <div class ="title-lessons">Forms</div>
+            <p>HTML 5 adds several new <b><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">form attributes</a></b> that prove quite useful, even if some are as yet poorly supported.</p>
+            <li><b>placeholder="value"</b>: prepopulates field with data</li>
+            <li><b>autofocus="autofocus"</b>: sets the input to have cursor focus</li>
+            <li><b>required="required"</b>: ensures field is filled in before submission</li>
+            <li>There are also several new <b>&lt;input&gt;</b> type attribute variants:</li>
+            <li><b>type="email"</b>: checkes for the pattern of emails</li>
+            <li><b>type="url"</b>: web addesses</li>
+            <li><b>type="date"</b>: calendar popup</li>
+            <li><b>type="tel"</b>: telephone numbers</li>
+            <li><b>type="search"</b>: formats text input as search input</li>
+            <li><b>type="color"</b>: color picker popup</li>
+            <li><b>type="range"</b>: sliding scales</li>
+            <li><b>type="pattern"</b>: regular expression pattern matching</li>
+            
+            <div class ="title-lessons">Scaleable Vector Graphics</div>
+            <p><b><a href="http://www.w3.org/Graphics/SVG/">Scaleable Vector Graphics (SVG)</a></b> can be embedded into HTML5 documents. SVG are 100% scalable without the pixelated effect that scaled raster images can suffer from. SVG file data is stored as text, so they are much smaller in file size than a raster equivalent.</p>
+        </div>
+
+
+
+
+        <div>
+            <p>You can use SVG graphics with the <b>img</b> tag, just as with raster graphics. You can also use .svg as a CSS <b>background-image</b>.</p>
+            <p><b>&lt;img src="images/logo.svg" alt="COMP 1950 logo" /&gt;</b></p>
+            <p>The <b>png</b> on the left is 26KB. The <b>.svg</b> on the right is only 4KB.</p>
+            <p>Alternatively, you can use SVG code 'inline' with the <b>svg</b> tag. The advantage of doing this is it will result in one less request/response between the client and the server. The disadvantage to inline SVG is that it adds considerable clutter to your your <b>.html</b> code. Just copy the source code from your <b>.svg</b> file and paste it directly into your <b>.html</b>!</p>
+            <p><b>&lt;svg viewBox="0 0 55 28"&gt;</b></p>
+            <p><b> &lt;!-- svg code goes here... sometimes there is a LOT of code here! --&gt;</b></p>
+            <p><b>&lt;/svg&gt;</b></p>
+
+            <div class ="sub-title-lessons">SVG Tools</div>
+            <p>Use an SVG application to help you create and manipulate your SVG code.</p>
+            <li><b><a href="http://www.adobe.com/ca/products/illustrator.html">Adobe Illustrator</a></b></li>
+            <li><b><a href="https://inkscape.org/en/">Inkscape</a></b> (Open source, Windows/Mac/Linux)</li>
+         
+            <div class ="sub-title-lessons">Multimedia</div>
+            <p>HTML5's more responsive multimedia features have made it easier to provide appropriately formatted video and audio to the client.</p>
+            
+            <div class ="sub-title-lessons">Audio</div>
+            <p>The <b><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/audio">audio</a></b> element provides a way to offer many audio formats to the client, allowing the browser to choose the one most suitable.</p>
+            <p>The most common audio formats for the web are: <b>audio/mp3</b>, <b>audio/mpeg</b> and <b>audio/ogg</b>.</p>
+            
+            <div class ="sub-title-lessons">Each audio tag may contain:</div>
+            <li><b>source</b> tags as children of the <b>audio</b> tag, one for each audio format available. Each <b>source</b> must have a <b>src</b> (path to audio file) and <b>type</b> (audio file MIME type)</li>
+            <li><b>controls="controls"</b> give the user control over the audio *important for usability*</li>
+        </div>
+
+        <div>
+            <li><b>loop="loop"</b> loop audio playback</li>
+            <li><b>preload="none"</b> dont load the audio until the user clicks 'play', <b>preload="metadata"</b> preloads the clip duration statistic only, <b>preload="auto"</b> loads the audio clip to the client before they click 'play'</li>
+            <li><b>autoplay="autoplay"</b> begin playing audio as soon as page is loaded *NOT very user friendly*</li>
+            <li>you may also wish to include a direct link for your users to download the file</li>
+           
+            <p><b>&lt;audio controls="controls"&gt;</b></p>
+            <p><b> &lt;source src="media/house-a-square.mpg" type="audio/mpeg" /&gt;</b></p>
+            <p><b> &lt;source src="media/house-a-square.mp3" type="audio/mp3" /&gt;</b></p>
+            <p><b> &lt;source src="media/house-a-square.ogg" type="audio/ogg" /&gt;</b></p>
+            <p><b>&lt;/audio&gt;</b></p>
+            <p><b><a href="http://bcitcomp.ca/1950/media/house-a-square.mp3">Download the audio</a></b></p>
+                
+            <div class ="sub-title-lessons">Video</div>
+            <p>The <b><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/video">video</a></b> element provides a way to offer many video formats to the client, allowing the browser to choose the one most suitable.</p>
+            <p>The most common video formats for the web are: <b>video/mp4</b>, <b>video/ogg</b> and <b>video/webm</b>.</p>
+            
+            <div class ="sub-title-lessons">Each video tag may contain:</div>
+            <li><b>source</b> tags as children of the <b>video</b> tag, one for each video format available. Each <b>source</b> must have a <b>src</b> (path to video file) and <b>type</b> (video file MIME type)</li>
+            <li><b>controls="controls"</b> give the user control over the video playback *important for usability*</li>
+            <li> set the size of the video (use CSS instead. absolute values only, no percentages)</li>
+            <li><b>poster="image.jpg"</b> display a static image when the video is not playing</li>
+            <li><b>loop="loop"</b> loop playback</li>
+            <li><b>muted="muted"</b> begin with audio silenced</li>
+        </div>
+
+        <div>
+            <li><b>preload="none"</b> dont load the video until the user clicks 'play', <b>preload="metadata"</b> preloads the clip duration statistic only, <b>preload="auto"</b> loads the clip to the client before they click 'play'</li>
+            <li><b>autoplay="autoplay"</b> begin playing video as soon as page is loaded *NOT very user friendly*</li>
+            <li>you may also wish to include a direct link for your users to download the file</li>
+
+            <p><b>&lt;video preload="none" </b></p>
+
+            <p><b>controls="controls"</p></b>
+            <p><b> poster="media/poster-bear-in-water.jpg"&gt;</b></p>
+            <p><b> &lt;source src="media/bear-in-water.webm" type="video/webm" /&gt; </b></p>
+            <p><b> &lt;source src="media/bear-in-water.mp4" type="video/mp4" /&gt;</b></p>
+            <p></p><b> &lt;source src="media/bear-in-water.ogg" type="video/ogg" /&gt;</b></p>
+            <p><b>&lt;/video&gt; </b></p>
+            <p><b><a href="http://bcitcomp.ca/1950/media/bear-in-water.mp4">Download the video</a></b></p>
+
+            <div class ="sub-title-lessons">HTML5 Today</div>
+            <p>User agent browsers will have varying support for the HTML5 specification.</p>
+            <li><b><a href="https://caniuse.com/">caniuse.com</a></b> is an excellent source for compatibility testing</li>
+            <li>Try the <b><a href="http://html5test.com/">HTML5Test</a></b> to test a specific browser.</li>
+            <li>To ensure early versions of Internet Explorer will render HTML5 tags correctly, you can add the HTML5 shiv:</li>
+            <ul>
+            <li><b>&lt;script&gt;document.createElement("article");&lt;/script&gt;</b></li>
+            <li>This creates an element called <b>&lt;article&gt;</b> which the browser (IE, in this case) can understand and style appropriately</li>
+            <li>Creating an entry for every element can get a bit heavy, so you can use the <b><a href="https://github.com/aFarkas/html5shiv">HTML5shiv</a></b> script written by <b><a href="http://remysharp.com/">Remy Sharp</a></b>. Insert a coded-comment that will apply the shiv ONLY with IE browsers earlier than version 9:</li>
+            <li><b>&lt;!--[if lt IE 9]&gt;</b></li>
+            <li><b> &lt;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;</b></li>
+        </div>
+
+        <div>
+            <p><b>&lt;![endif]--&gt;</b></p>
+            <li>Since HTML5 understands both HTML4 and XHTML tags, converting an older HTML file into HTML5 is simply a matter of updating the DOCTYPE and meta tag for charset.</li>
+            
+            <div class ="title-lessons">To Do</div>
+            <li>Download, review, and complete the homework assignment from <b><a href="https://learn.bcit.ca/">D2L</a></b></li>
+            <li>Review the <b><href="#semantics">HTML5 semantic tags</a></b>, know how and when to use them to maxmize the semantic strucure of your HTML</li>
+        </div>
+
+        <div>
+            <h1>Agenda</h1>
+        
+            <li><b>Referencing Stylesheets</b></li>
+            <li><b>Importing</b></li>
+            <li><b>Fonts</b></li>
+            <li><b>Compact CSS</b></li>
+            <li><b>Advanced Selectors</b></li>
+            <li><b>Rule Specificity</b></li>
+            <li><b>To Do</b></li>
+                
+            <div class ="title-lessons">Referencing CSS</div>
+            <p>When linking to external style sheets, there are a number of features to be aware of:</p>
+            <li>Each stylesheet requires it's own <b>link</b> tag</li>
+            <li>Multiple stylesheets can be loaded (main.css, fonts.css, layout.css, etc)</li>
+            <li><b>rel</b> determines how the HTML will use the file linked to (<i>REQUIRED)</i></li>
+            <li><b>href</b> defines the path, relative or absolute, to the css file (<i>REQUIRED</i>)</li>
+            <li><b>type</b> attribute is has been deprecated (dropped in HTML5)</li>
+            <li><b>title</b> attribute allows the user to group stylesheets</li>
+            <li><b>media</b> attribute allows you to specify what medium this should be viewed in</li>
+            <p><b>&lt;link rel="stylesheet" </b></p>
+            <p><b> href="http://www.mysite.com/css/styles.css" </b></p>
+            <p><b> type="text/css" </b></p>
+            <p><b> title="Main Style" </b></p>      
+            <p><b> media="screen" /&gt;</b></p>
+        </div>
+
+        <div>
+            <div class ="sub-title-lessons">Media variations: media attribute</div>
+            <li><b>media="type"</b> can be a powerful tool</li>
+            <li>Examples of media types:</li>
+            <li><b>all</b> - well supported, commonly used (<i>DEFAULT)</i></li>
+            <li><b>aural</b></li>
+            <li><b>braille</b></li>
+            <li><b>embossed</b></li>
+            <li><b>handheld</b> - not common (smart phones identify as <b>screen</b>)</li>
+            <li><b>print</b> - well supported, commonly used</li>
+            <li><b>projection</b></li>
+            <li><b>screen</b> - well supported, commonly used</li>
+            <li><b>tty</b></li>
+            <li><b>tv</b></li>
+
+            <li>Note that most smart phone devices (iPhones, Andriod, etc) do not identify themselves as media type <b>handheld</b>. The reasoning was that the devices were more than capable of displaying standard web sites, so they identify as <b>screen</b></li>
+
+            <div class ="sub-title-lessons">Alternate style sheets: rel attribute</div>
+            <p>You can also have alternate stylesheets supported</p>
+            <li><b>rel="stylesheet"</b> defines the default stylesheets to use</li>
+            <li><b>rel="alternate stylesheet"</b> allows different styles to be defined</li>
+            <li><b>Tip:</b> If you have multiple sheets that belong to one "look" make sure they all have the same <b>title</b></li>
+            <li>You can create alternate style sheets for users, allowing them to select which ones they would like to see</li>
+            <li>An example would be to create a 'Larger Text' style sheet with everything in a larger font, or providing an option for users to choose an austere, simple page instead of a colorful/image heavy stylesheet</li>
+            <li>Many browsers are now giving users the ability to select which sheet they would like to see. (Firefox: View &gt; Page Style)</li>
+
+        </div>
+
+        <div>
+
+            <div class ="sub-title-lessons">Alternate style sheets: title attribute</div>
+            <li>A stylesheet is "persistent" if it is linked with <b>rel="stylesheet"</b> and has no <b>title</b> attribute. All persistent stylesheets are always used when rendering</li>
+            <li>A stylesheet is "preferred" if it is linked with <b>rel="stylesheet"</b> and has a <b>title</b> attribute. these styles will be used as the default. preferred stylesheets with the same title are grouped together</li>
+            <li>Finally, a stylesheet is "alternate" if it is linked with <b>rel="alternate stylesheet"</b> and has a <b>title</b>. These stylesheets are supposed to allow the user to choose stylesheets, they are grouped together by <b>title</b> and show up in the browser's stylesheet selector if it has one (<b>View &gt; Page Style</b> in Firefox). Each group (by <b>title</b>) is mutually exclusive.</li>
+
+            <div class ="sub-title-lessons">Persistent Styles</div>
+            <p>Persistent styles apply in all cases, even when alternate styles are chosen.</p>
+            <p><b>&lt;!-- rel="stylesheet" with NO title="" --&gt;</b></p>
+            <p><b>&lt;link rel="stylesheet" </b></p>
+            <p><b> href="css/persistent_styles.css" /&gt;</b></p>
+            <div class ="sub-title-lessons">Preferred Styles</div>
+            <p>Preferred styles will be the default, but will be replaced if alternate styles are chosen.</p>
+            <p><b>&lt;!-- rel="stylesheet" AND a title="" --&gt;</b></p>
+            <p><b>&lt;link rel="stylesheet" </b></p>
+            <p><b> href="css/default_styles.css"</b></p>
+            <p><b> title="Standard Styling" /&gt;</b></p>
+
+            <div class ="sub-title-lessons">Alternate Styles</div>
+            <p>Alternate styles will not be applied by default, but may be chosen by the user agent. Each alternate stylesheet must have a <b>title=""</b>.</p>
+            <p><b>&lt;!-- use rel="alternate stylesheet" for alternative stylesheets... --&gt;</b></p>
+            <p><b>&lt;link rel="alternate stylesheet" </b></p>
+            <p><b> href="css/large_text.css"</b></p>
+            <p><b> title="Large Text Styles" /&gt;</b></p>
+        </div>
+
+        <div>
+            <div class ="sub-title-lessons">Grouping Stylesheets</div>
+            <p>If more than one link tag shares the same <b>title=""</b> then they will be grouped together.</p>
+            <p><b>&lt;-- group stylesheets with shared title="" --&gt;</b></p>
+            <p><b>&lt;link rel="alternate stylesheet" </b></p>
+            <p><b> href="css/monchrome_layout.css"</b></p>
+            <p><b> title="Monochrome Styles" /&gt;</b></p>
+            <p><b>&lt;link rel="alternate stylesheet" </b></p>
+            <p><b> href="css/monchrome_fonts.css"</b></p>
+            <p><b> title="Monochrome Styles" /&gt;</b></p>
+
+            <p>To enable alternate stylesheet switching, you can either apply some javascript to manage the switch with hyperlinks, or use <b><a href="https://support.mozilla.org/en-US/questions/841578">Firefox for alternate stylesheets</a></b>.</p>
+            
+            <div class ="title-lessons">@import: Managing Multiple CSS Files</div>
+            <p>You can use the <b>@import</b> method to import multiple stylesheets from a basic stylesheet that you link to. This will reduce the clutter that can sometimes occur within the <b>&lt;head&gt;</b> section.</p>
+            <p>It is also a great place to be able to manage your CSS. From your main document, create a <b>&lt;link&gt;</b> to your <b>styles.css</b> page.</p>
+            <p>In the body of the <b>styles.css</b> file, import as many files as you need:</p>
+
+            <li><b>@import url("css/type.css");</b></li>
+            <li><b>@import url("css/nav.css");</b></li>
+            <li><b>@import url("css/template.css");</b></li>
+
+            <p><b>NOTE:</b> when using the <b>@import</b> directive in an external CSS file, ensure it comes before your CSS selector rules. It might be best to not include any CSS rules in a page that uses <b>@import</b>.</p>
+
+            <p><b>@charset: Assigning CSS Character Set</b></p>
+            <p>If your CSS files only contain standard keyboard characters, assigning the character set is not required. The CSS language itself does not use any exotic characters, so assigning a charset is often omitted. If, however, your CSS needs to use special characters, ensuring the correct character set can be</p>
+        </div>
+
+        <div>
+            <p>very important. Eg: When using a pseudoclass to add content to HTML <b>content: "Äwesome!"</b></p>
+            <p>If needed, add the <b>@charset</b> rule to the top of the CSS document.</p>
+            <p><b>/* assign charset at top of .css file */</b></p>
+            <p><b>@charset "utf-8";</b></p>
+            <p><b>/* CSS rules follow... */</b></p>
+            <p><b>@font-face And Font Servers</b></p>
+            <p>Fonts that aren't available on the client machine can be provided by a third-party font server or by your website's server.</p>
+            <li><b><a href="https://fonts.google.com/">Google Fonts</a></b></li>
+            <li><b><a href="https://typekit.com/">Adobe Typekit</a></b></li>
+            <li><b><a href="https://www.fontsquirrel.com/">Font Squirrel</a></b></li>
+            <li>Plenty more available online...</li>
+
+            <div class ="title-lessons">Third Party Font Server</div>
+            <p>Browse the font server site, select the fonts you like and they wil provide you with code for a <b>&lt;link /&gt;</b> tag to add to your HTML. You can then use the font in your CSS.</p>
+            <p><b>&lt;!-- add the link tag to the HTML --&gt;</b></p>
+            <p><b>&lt;link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet" /&gt; </b></p>
+            <p><b>/* use the font in the CSS */</b></p>
+            <p><b>selector{</b></p>
+            <p><b> font-family: 'Bungee', cursive;</b></p>
+            <p><b>}</b></p>
+            <p>No longer stuck with 'Arial', 'Helvetica', 'Georgia' and the rest.</p>
+
+            <div class ="sub-title-lessons">Serve Fonts From Your Website</div>
+            <p>If the font(s) are copyright free, or if you have license to distribute a font, you can serve them yourself using the CSS <b><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face">@font-face</a></b> directive.</p>
+        
+        </div>
+
+        <div>
+            <p>Different client systems will need fonts in varying formats, so if you are distributing the font yourself, be sure to have the font available in most common formats.</p>
+            <li>Obtain the font(s) you wish to use. You must either have license to distribute the font or the font must be copyright free.</li>
+            <li>Upload your font(s) to a <b><a href="https://www.fontsquirrel.com/tools/webfont-generator">Font Generator</a></b> to obtain a font kit including various formats for the font(s)</li>
+            <li>Uncompress the font kit and locate it somewhere with your website files</li>
+            <li>Use <b><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face">@font-face</a></b> to load the fonts. The font-kit generated by Squirrel Font will include some same CSS to help you with the sometimes volumous coding</li>
+            <li>Apply the new font in CSS</li>
+            
+            <div class ="sub-title-lessons">/* load the font in CSS */</div>
+            <p><b>@font-face {</b></p>
+            <p><b> font-family: 'alex_brushregular';</b></p>
+            <p><b> src: url('/fonts/alexbrush-regular-webfont.woff2') format('woff2'),</b></p>
+            <p><b> url('/fonts/alexbrush-regular-webfont.woff') format('woff'), </b></p>
+            <p><b> url('/fonts/alexbrush-regular-webfont.ttf') format('tff');</b></p>
+            <p><b>}</b></p>
+            <p><b>/* use the font in CSS */</b></p>
+            <p><b>selector{ </b></p>
+            <p><b> font: bold 20px alex_brushregular ;</b></p>
+            <p><b> color:#555;</b></p>
+            <p><b>}</b></p>
+            <p><b>Don't get carried away with wild font choices. Some fonts have very poor readability, reducing accessibility.</b></p>
+            
+            <div class ="sub-title-lessons">CSS Measurements</div>
+            <p>In CSS, there are a number of measurement values that can be used in declarations.</p>
+
+        </div>
+
+        <div>
+            <div class ="sub-title-lessons">Size measurements</div>
+            <li><b>px</b> - Pixels is one of the most common measuring types. It is specific to computers, as it renders based on the pixel-display of all monitors. Great for specific measurements on boxes and borders, but for fonts, it can lead to difficulty as some browsers don't allow scaling and font can end up too small</li>
+            <li><b>%</b> - Percentage measurements are also very common.</li>
+            <li><b>em</b> - A relative measurement of the letter "m" in the chosen font. This is a popular one for spacing around text, as it inherits the font dimensions</li>
+            <li><b>rem</b> - Similar to <b>em</b>, this will inherit only the Root value, helpful for avoiding 'compound inheritance' values</li>
+            <li><b>pt</b> - Points is an aold system related to type-setting that had a standard size for points. This is a relative size based on the users' system</li>
+            <li><b>pc</b> - Picas is a very old system that was frequently related to typewritten documents. Rarely used.</li>
+            <li><b>ex</b> - Similar to <b>em</b>, this is a relative measurement of the letter "x". However, it is rarely used, and not fully supported</li>
+            <li><b>vh, vw, vmin, vmax</b> - size relative to viewport widths and heights. very useful for scaling, though may not enjoy full support yet</li>
+            <li><b>named</b> - This refers to fonts and a few other elements. The named sizes are xx-small, x-small, small, medium, large, x-large, xx-large. They are relative to the browsers base font size</li>
+         
+            <div class ="sub-title-lessons">Color Measurement</div>
+            <p>Colors can be specified in a number of ways, corresponding to the system that your organization or visual element requires. Almost all color systems use a method for expressing a combination of the three color spaces used for displaying colors on computer monitors: Red Green and Blue.</p>
+            <li><b>Hex: #003366</b> - One of the most common systems, it combines 2 digits each for Red Green and Blue. Each hex pair stand stands for digits between 00 and FF in hexadecimal</li>
+            <li><b>Compact Hex: #f30</b> - This is almost identical to the Hex version, except that when three numbers are used, most browsers will just double-up each digit. So, <b>#f30</b> will become <b>#ff3300</b></li>
+        </div>
+
+        <div>
+            <li><b>Named: cornflowerblue</b> - Although the official W3C specification only lists 16 named colors, almost every browser supports the various <b><a href="http://www.google.ca/search?q=css+named+colors">named colors</a></b></li>
+            <li><b>RGB: rgb(255, 0, 255)</b> - This allows the user to specify the same thing as Hex, but in Decimal format</li>
+            <li><b>RGB %: rgb(100%, 0%, 50%)</b> - Almost identical to RGB, but with percentages of each color space instead</li>
+
+            <div class ="title-lessons">Compact CSS Code</div>
+            <p>When building your CSS rules, there are some easy ways to compact your code, reducing code bloat and filesize.</p>
+
+            <div class ="sub-title-lessons">Grouping selectors</div>
+            <li>If you would like to apply the same style to a multitude of different selectors, you can group them with the comma</li>
+            <li><b>h1, h2, h3, h4, h5 { color: red; }</b></li>
+            <li>This can be done with Elements, classes and IDs</li>
+            <li>Specific rules for H3 (for example) can come later</li>
+
+
+            <div class ="sub-title-lessons">Grouping comes to Classes</div>
+            <li>As well as grouping Elements, you can also group classes</li>
+            <li>Define several classes: <b>.cool{ color:red; } .wicked { border:1px solid black; }</b></li>
+            <li>Assign several classes at once: <b>&lt;p &gt;</b> will select both the <b>cool</b> and <b>wicked</b> classes</li>
+            <li>The order of the attribute values is irrelevant</li>
+            <li>Case is important! Remember to use a single rule for CSS naming and stick with it</li>
+
+            
+            <div class ="sub-title-lessons">>Rule Compacting</div>
+            <p>There are a lot of rules that will accept a compacted ruleset:</p>
+            <li><b><a href="https://developer.mozilla.org/en/docs/Web/CSS/margin">margin</a>: top right bottom left;</b></li>
+            <li><b><a href="https://developer.mozilla.org/en/docs/Web/CSS/padding">padding</a>: top right bottom left;</b></li>
+            <li><b><a href="https://developer.mozilla.org/en/docs/Web/CSS/border">border</a>: width style color;</b></li>
+        </div>
+
+        <div>
+            <li><b><a href="https://developer.mozilla.org/en/docs/Web/CSS/font">font</a>: font-style font-variant font-weight font-size/line-height font-family;</b></li>
+            <li><b><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background">background</a>: color image position repeat size attachment;</b></li>
+
+            <p>Box model properties support 1, 2, 3 and 4 values. For example:</p>
+            <li><b>border-width:10px;</b></li>
+            <li>all four borders are 10px</li>
+            <li><b>border-width:10px 20px;</b></li>
+            <li>top and bottom borders are 10px</li>
+            <li>left and right borders are 20px</li>
+            <li><b>border-width:10px 20px 30px;</b></li>
+            <li>top border is 10px</li>
+            <li>left and right borders are 20px</li>
+            <li>bottom border is 30px</li>
+            <li><b>border-width:10px 20px 30px 40px;</b></li>
+            <li>top border is 10px</li>
+            <li>right border is 20px</li>
+            <li>bottom border is 30px</li>
+            <li>left border is 40px</li>
+
+            <p>Note you do not need to specify values for all fields in a compact rule. Just keep the space delimited list in the correct order. For example, you could specify several font values all at once:<br />
+            <b>font: italic small-caps bold 1.3em "helvetica", sans-serif;</b> <br />
+            or, specify only a select couple.<br />
+            <b>font: 1.3em "helvetica", sans-serif;</b></p>
+
+            <div class ="title-lessons">CSS Selectors</div>
+            <p>There are several <b><a href="http://css.maxdesign.com.au/selectutorial/">advanced CSS selector techniques</a></b> that provide plenty of options for the application of style.</p>
+        </div>
+
+        <div>
+            <div class ="sub-title-lessons">Universal Selector</div>
+            <li>This is a fairly widely supported selector: the asterisk <b>*</b></li>
+            <li>Use it to specify a global rule</li>
+            <li><b>* { color: red; }</b> will make all font color red on your page</li>
+            <li>The universal selector can be very powerful, as it can command a lot of changes to your styles,</li>
+             
+            <div class ="sub-title-lessons">Pseudo-classes</div>
+            <p>A Pseudo-class is a selector that allows you to reference a specific action or attribute of an element. This is most often used when specifying <b>a</b> attributes, such as <b>:visited</b> and <b>:link</b>.</p>
+            <p>There are other uses for pseudo elements, that will allow for greater detail in styling content, such as <b>:first-letter</b> and <b>:first-line</b>. These allow the browser to apply a style based on an unselected, but displayed element.</p>
+            <p><i>Best part:</i> No <b>span</b> or <b>div</b> required to access these pseudo-elements.</p>
+ 
+            <li>Within <b>a</b> pseudo-elements in particular, it's important to follow a certain order:</li>
+           
+            <li><b>a:link</b></li>
+            <li><b>a:visited</b></li>
+            <li><b>a:hover</b></li>
+            <li><b>a:active</b></li>
+
+            <p>Easy mnemonic: LVHA - <b>L</b>o<b>V</b>e - <b>HA</b>te. Because of the way that CSS applies rules, it looks at the LAST rule for a given element and applies more weight to it. For example, if you are hovering over a link, you don't want to see the link state</p>
+
+            <li>There are several additional <b><a href="http://css.maxdesign.com.au/selectutorial/selectors_pseudo_class.htm">pseudo-classes</a></b> and <b><a href="http://css.maxdesign.com.au/selectutorial/selectors_pseudo_element.htm">pseudo-elements</a></b></li>
+        
+            <li><b>selector:before, selector:after</b> - add text content before or after the selector's content</li>
+            <li><b>selector:first-line, selector:first-letter</b> - style the first line or letter of the selector</li>
+            <li><b>selector:first-of-type</b>, <b>selector:last-of-type</b> - style the first or last tag of the selector type</li>
+            
+        </div>
+
+        <div>
+            <li><b>selector:nth-of-type(n)</b> - select the nth() tag of the same type as selector</li>
+            <li><b>selector:nth-child(n)</b> - select the nth() child</li>
+            <li><b>selector:nth-child(2n)</b> - select every even numbered child</li>
+            <li><b>selector:nth-child(2n+1)</b> - select every odd numbered child</li>
+
+            <div class ="sub-title-lessons">Descendant Selectors</div>
+            <li>Separated by a space, the last element is the one being styled</li>
+            <li><b>h1 em</b> will apply rules to all em's within an h1</li>
+            <li>You can have as many as you want: <b>ul ol ul li</b></li>
+            <li>Great for specifying different styles when they apply only in certain areas</li>
+            <li><b>#nav a { ... }</b> will only apply these rules to Anchors within the div called nav</li>
+            <li>Degree of separation can be infinite, so be careful</li>
+            <li><b>p em</b> will match ANY em that descends from a paragraph, no matter how nested</li>
+    
+            <div class ="sub-title-lessons">Child Selectors</div>
+            <li>Uses the &gt; combinator to specify children</li>
+            <li>Will select an element that is directly descended from another element</li>
+            <li><b>p &gt; strong</b> will only select a strong tag that is inside a paragraph</li>
+            <li>Will not select a strong tag embedded in any other tag (even if it is within a paragraph)</li>
+
+            <div class ="sub-title-lessons">Adjacent Sibling Selectors</div>
+            <li>The + combinator specifies the first sibling tag following the root</li>
+            <li>It will not include the root for styling</li>
+            <li><b>div + h2</b> will select the first sibling h2 following a div tag</li>
+
+            <div class ="sub-title-lessons">General Sibling Selectors</div>
+            <li>The ~ combinator specifies all siblings tags following the root</li>
+        </div>
+
+        <div>
+            <li>It will not select sibling tags that precede the root, nor will it include the root</li>
+            <li><b>h1 ~ h2</b> will select all sibling h2 tags that follow an h1</li>
+
+            <div class ="sub-title-lessons">Attribute Selectors</div>
+            <li>You can also select elements by what the element contains</li>
+            <li>The method is: <b>element[attribute=value]</b></li>
+            <li>If you specify an attribute with no value, you will match any element that simply has the attribute present (no matter what it's value is)</li>
+            <li><b>p[align] {color: red;}</b> will turn red any paragraph that contains an align attribute</li>
+            <li>Similarly, <b>img[alt] {border: 1pt red solid; }</b> will draw a red line around all images with an alt attribute</li>
+            <li>You can further direct the attribute selector to find content that is at the beginning (using the carat: ^), somewhere inside (using the asterisk: *) or end of a value (using the dollar sign: $)</li>
+            <li>Attribute selector examples:</li>
+          
+            <li><b>img[alt]</b> - select all img tags that have alt attributes</li>
+            <li><b>img[src="images/pic.jpg"]</b> - select img tags whose src is 'images/pic.jpg'</li>
+            <li><b>img[src^="gallery/"]</b> - select all img tags whose src BEGINS with 'gallery/'</li>
+            <li><b>img[src*="logo"]</b> - select all img tags whose src CONTAINS 'logo'</li>
+            <li><b>img[src$=".png"]</b> - select all img tags whose src ENDS with '.png'</li>
+
+            <p><b>Rule Order &amp; Specificity</b></p>
+            <p>When a style declaration is found to be in conflict with a previously declared style, there is a method for determining which one will win out. The process is built into every web browser, and almost all of them calculate the values identically (for once!).</p>
+        </div>
+
+        <div>
+            <p>Here is how the W3C defines the process by which style order is determined:</p>
+            <li><b>Discover all declarations.</b> Find all declarations that apply to the element and property in question, for the target media type. Declarations apply if the associated selector matches the element in question.</li>
+            <li><b>Sheet Order.</b> The primary sort of the declarations is by weight and origin: for normal declarations, author style sheets override user style sheets which override the default style sheet.</li>
+            <li><i>Note:</i> For "!important" declarations, user style sheets override author style sheets which override the default style sheet. "!important" declaration override normal declarations. An imported style sheet has the same origin as the style sheet that imported it.</li>
+   
+            <li><b>Specificity:</b> The secondary sort is by specificity of selector: more specific selectors will override more general ones. Pseudo-elements and pseudo-classes are counted as normal elements and classes, respectively.</li>
+            <li><b>Sort by Order:</b> Finally, sort by order specified: if two rules have the same weight, origin and specificity, the latter specified wins. Rules in imported style sheets are considered to be before any rules in the style sheet itself.</li>
+          
+            <p>All of the rules are pretty straightforward, except for Specificity, which bears some explanation.</p>
+            <p><b>Specificity</b> is a method for determining what rules are applied when a conflict between two selectors occurs. Through a method of adding values when certain elements and selectors are present, a specificity number can be applied to any CSS rule. The one with highest specificity wins and the associated rule is applied to the element(s) in question.</p>
+       
+            <div class ="title-lessons">Ruleset for Specificity</div>
+
+            <p>Style sheets can also override conflicting style sheets based on their level of specificity, where a more specific style will always win out over a less specific one. It is simply a counting game to calculate the specificity of a selector.</p>
+            <li>1 Count the number of IDs in the selector.</li>
+            <li>2 Count the number of CLASS, pseudoclass, and attribute selectors.</li>
+            <li>3 Count the number of HTML tag names in the selector.</li>
+        </div>
+
+        <div>
+            </ol><p>Next, write the three numbers in exact order with no spaces or commas to obtain a three digit number. (Note, you may need to convert the numbers to a larger base to end up with three digits.) The final list of numbers corresponding to selectors will easily determine specificity with the higher numbers winning out over lower numbers. Following is a list of selectors sorted by specificity:</p>
+            <li>#id1<br />
+            /* <b>id</b>=1 <b>class</b>=0 <b>HTML</b>=0 --&gt; specificity = 100 */</li>
+            <li>UL UL LI.red<br />
+            /* <b>id</b>=0 <b>class</b>=1 <b>HTML</b>=3 --&gt; specificity = 013 */</li>
+            <li>LI.red<br />
+            /* <b>id</b>=0 <b>class</b>=1 <b>HTML</b>=1 --&gt; specificity = 011 */</li>
+            <li>LI<br />
+            /* <b>id</b>=0 <b>class</b>=0 <b>HTML</b>=1 --&gt; specificity = 001 */</li>
+        
+            <div class ="sub-title-lessons">!important rule</div>
+            <li>This declaration, when added to a rule, will override almost all other declarations, with no respect for specificity.</li>
+            <li>It indicates that this rule should take over any previous rules that might govern a specific element.</li>
+            <li>Example <b>.selector{ color:blue !important; }</b></li>
+            <li>This rule can cause havoc if overused, as it will overrule any other declaration with the same selector. <b>Be careful with !important</b></li>
+         
+        
+            <div class ="title-lessons">To Do</div>
+            <li>Download, review, and complete the homework assignment from <b><a href="https://learn.bcit.ca/">D2L</a></b></li>
+            <li>Find a partner for your homework.</li>
+            <li>Practice using <b><href="#advanced_selectors">advanced CSS selectors</a></b></li>
+        </div>
+        <div>
+            
+        </div>
+
+
+        <div class="hard"></div>
+        <div class="hard"></div>
+
+    </div>
+    <!--flipbook-->
+
+    <footer>
+            <p id="p-footer">&copy; 2018 Final Project</p>
+    </footer>
+    
+    </div><!--wrapper-->
+
+    <script type="text/javascript">
+        $('#flipbook').turn({
+            width: 1260, //1260
+            height: 700, //700 
+            //autocenter: true
+        });
+
+    </script>
+
+</body>
+
+</html>

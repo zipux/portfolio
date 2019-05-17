@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/showHide.js" type="text/javascript"></script>
+    <script src="js/validate.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+        <div class='wrapper'>
+                <header>
+                <h1 id="logo">BCIT COMP 1950</h1>
+    <!--nav  bar-->
+    <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <div class="icon">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        </div><!--icon-->
+                        <div class="name"><span data-text="Home"> Home</span></div><!--name-->
+                    </a>
+                </li>
+                <li>
+                    <a href="outline.html">
+                        <div class="icon">
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                        </div><!--icon-->
+                        <div class="name"><span data-text="Course"> Course</span></div><!--name-->
+                    </a>
+                </li>
+                <li>
+                    <a href="schedule.html">
+                        <div class="icon">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </div><!--icon-->
+                        <div class="name"><span data-text="Schedule">Schedule</span></div><!--name-->
+                    </a>
+                </li>
+                <li>
+                    <a href="lessons.html">
+                        <div class="icon">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        </div><!--icon-->
+                        <div class="name"><span data-text="Lessons"> Lessons</span></div><!--name-->
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <div class="icon">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </div><!--icon-->
+                        <div class="name"><span data-text="Contact"> Contact</span></div><!--name-->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+</header>
+
+    <main>
+        <div class="wrap-contact">
+            <h2>Contact Us</h2>
+            <img id="envelope" src="img/envelope.png">
+    
+            <div class="container-radio">
+    
+                <label>Current student</label>
+                <input type="radio" checked="checked" name="radio" id="current-student" onclick="showHideID()">
+                <span class="checkmark"></span>
+    
+                <label>Future student</label>
+                <input type="radio" name="radio" id="future-student" onclick="showHideID()">
+                <span class="checkmark"></span>
+                
+            </div><!--container-radio-->
+    
+    <form name="myForm" action="#" method="POST" onsubmit="validateForm()">
+    
+            <input class="input" type="text" placeholder="First name" id="fname">
+            
+            <input class="input" type="text" placeholder="Last name" id="lname">
+    
+            <input class="input" type="text" placeholder="Your email" name="email">
+     
+            <input class="input" type="text" placeholder="Your BCIT ID" name="BCIT ID" id="BCIT ID">
+            
+            <div class="input-box">
+            <input type="submit" value="Submit">
+            </div><!--end of input-box-->
+    
+            </div><!--end of wrap-contact-->
+       
+    </form>
+</main>
+
+<footer>
+        <p id="p-footer">&copy; 2018 Final Project</p>
+</footer>
+
+</div>
+
+</body>
+</html>

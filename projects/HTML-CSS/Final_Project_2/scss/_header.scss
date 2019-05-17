@@ -1,0 +1,104 @@
+header {
+    nav {
+        max-height:100%; //min-height 100%
+        flex-grow: 1;
+        width: 200px;
+         ul {
+             justify-content: space-between; // add giovedi 1.49
+             padding-top: 0; // as above
+             height: 420px; // aggiunto da me adesso giovedi 1.49
+             margin: 0;
+             padding: 20px 0;
+             background: #fff;
+             display: flex;
+             flex-direction: column;
+             //float:left;
+            // border-radius: 10px;
+             //box-shadow: 0px 30px 50px rgba(0,0,0,.3); // original style
+             box-shadow: 5px 25px 90px rgba(5, 1, 240, 0.979);
+           
+         }
+         ul li 
+         {
+             list-style: none;
+             text-align: center;
+             display: block;
+             // border-right: 1px solid rgba(0,0,0,0.2); NON PIU BISOGNO 
+         }
+         ul li:last-child
+         {
+             border-right: none;
+         }
+         ul li a
+         {
+             text-decoration: none;
+             padding: 0 50px;
+             display: block;
+         }
+         ul li a .icon
+         {
+             width: 40px;
+             height: 40px;
+             text-align: center;
+             overflow: hidden; /*background:  #ccc; /* color bck icon*/
+             margin: 0 auto 10px;
+         }
+         ul li a .icon .fa
+         {
+             width: 100%;
+             height: 100%;
+             line-height: 40px;
+             font-size: 34px;
+             transition: 0.5s;
+             color: #000;
+         }
+         ul li a .icon .fa:last-child
+         {
+             color: #e91e63;
+         }
+         ul li a:hover .icon .fa 
+         {
+             transform: translateY(-100%);
+         }
+         ul li a .name
+         {
+             position: relative;
+             height: 20px;
+             width: auto /*100%;*/;
+             display: inline-block /*block;*/;
+             overflow: hidden;
+         }
+         ul li a .name span
+         {
+             display: block;
+             position: relative;
+             color: #000;
+             font-size: 18px;
+             line-height: 20px;
+             transition: 0.5s;
+         }
+         ul li a .name span::before
+         {
+             content: attr(data-text);
+             position: absolute;
+             top: -100%;
+             left: 0;
+             width: 100%;
+             height: 100%;
+             color: #e91e63;
+         }
+         ul li a:hover .name span
+         {
+             transform: translateY(20px);
+         }}
+    
+         #logo { //BCIT COMP 1950
+            margin-top: 0;
+            width: 200px;
+            height: 140px;
+            padding: 28px 2px;
+            background-color: $logo-bg-color;
+            color: $text-logo-color;
+            margin-bottom: 0;
+        }
+    }    

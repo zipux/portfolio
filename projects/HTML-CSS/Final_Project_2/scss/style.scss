@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+// Background colors
+$body-bg-color: #303030;
+$wrapper-bg-color: white;
+$footer-bg-color: #7683C9;
+$logo-bg-color:  rgba(5, 1, 240, 0.979);// blue;
+
+// Text Colors
+$text-logo-color: white;
+
+
+//text align
+@mixin align-center(){
+    text-align: center;
+}
+
+// Fonts
+$body-font: Georgia, Times, Times New Roman, serif;
+//$heading-font: Tahoma, Verdana, Segoe, sans-serif;
+
+// Typographic 
+$line-height: 1.4;
+
+
+// Mixins
+// Mixin for centering element 
+@mixin margin-center {
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
+
+@mixin calendar-cell {
+    border:solid 1px grey; 
+    border-radius: 10px;
+    box-shadow: 5px -5px 5px #aaaaaa;
+    background-color:transparent;
+
+}
+
+// witdth
+@mixin footer-width {
+    width: 1260px;
+}
+@mixin width {
+    width: 1260px;
+}
+
+// height 
+@mixin height {
+    //height: 680px;
+}
+@mixin height-footer {
+    height: 40px;
+}
+
+// Layout variables
+$padding:  10px; //30px;
+$padding-footer: 1px;
+@mixin position-footer {
+    position: absolute;
+    bottom: 0;
+
+}
+@import "place_holder";
+@import "variables";
+@import "mixins";
+
+@import "header";
+
+//@import "nav-bar";
+@import "body";
+@import "contact";
+@import "footer";
+@import "lessons";
+@import "index";
+@import "schedule";
+@import "outline";
+@import "wrapper-main";
+
+@import "hamburger";
+
+
+
+
+
+

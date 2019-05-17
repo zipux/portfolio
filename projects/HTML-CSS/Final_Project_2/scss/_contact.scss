@@ -1,0 +1,116 @@
+.wrap-contact {
+    width: auto;
+    //border: 2px solid red;
+    margin: 0 auto;
+    position: relative;
+    //padding-bottom: 15px;
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrap-contact h2 { /* contact us */
+    font-size: 2.5em;
+    text-align: center;
+    color: aquamarine;
+    padding-top: 15px;
+}
+
+#envelope {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 20px;
+    left: 95px;
+}
+
+.container-radio {
+    border: 2px solid green;
+    text-align: center;
+    margin-bottom: 10px;
+    height: 100%;
+}
+
+label {
+    font-size: 1.7em;
+    color: aquamarine;
+   
+}
+
+.input {
+    border: 2px solid pink;
+    height: 40px;
+    width: 80%;
+    text-align: center;
+    background-color: white; /*transparent;*/
+    color: black/* white*/;
+    font-size:1.6em;
+    margin: 10px 0;
+    
+}
+
+.input-box{
+    margin-top: 10px;
+}
+
+
+/* button */
+
+input[type=submit] {
+    background: linear-gradient(to right, gold, darkorange);
+	color: white;
+	--width: 250px;
+	--height: calc(var(--width) / 3);
+	width: var(--width);
+	height: var(--height);
+	text-align: center;
+	line-height: var(--height);
+	font-size: calc(var(--height) / 2.5);
+	font-family: sans-serif;
+	letter-spacing: 0.2em;
+	border: 1px solid darkgoldenrod;
+	border-radius: 2em;
+	transform: perspective(500px) rotateY(-20deg); /*-15 */
+	text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 0 0 5px rgba(0, 0, 0, 0.2);
+	transition: 0.5s;
+	position: relative;
+    overflow: hidden;
+    margin-bottom: 45px;
+
+}
+
+input[type=submit]:hover {
+	transform: perspective(500px) rotateY(20deg); /* 15 */
+	text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: -2px 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type=submit]::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, transparent, red/*white*/, transparent);
+	left: -100%;
+	transition: 0.5s/*0.5*/;
+}
+
+input[type=submit]:hover::before {
+	left: 100%;
+}
+
+@media screen and (max-width: 1080px) {
+    .wrap-contact {
+        width: 550px;
+        margin: 0;
+    }
+}
+

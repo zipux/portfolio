@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <p>Simone </p> &nbsp; &nbsp; <p> Isonni</p>
+            </div> 
+
+            <nav class="nav-desktop">
+                <ul>
+                <li><a href="#" class="underline">Intro</a></li>
+                <li><a href="#projects" class="underline">Projects</a></li>
+                <li><a href="#contact" class="underline">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger-button">
+                <button ><i class="fas fa-bars fa-4x"></i></button>
+            </div>
+            <nav id="nav-mobile">
+                <ul>
+                    <li><a href="#" class="underline">Intro</a></li>
+                    <li><a href="#projects" class="underline">Projects</a></li>
+                    <li><a href="#contact" class="underline">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="me">
+            <div class="column picture">
+                <img class="picture-me" src="https://picsum.photos/150/151/?people">
+            </div><!-- column-->
+            <div class="column description">
+                <p>Hi,<br/> I'm Simone, a recent graduated BCIT student as a web developer. In that course, I studied several languages such as HTML, CSS, JavaScript, React, Angular, SQL. I had to create projects for my classes and you can take a look in the section below if interested. 
+                    Currently, I'm taking a course, in BCIT, called graphic design because I want to have some skills about design. I'm looking for an opportunity as a Junior developer or an internship as well. If you are interested in hiring me please contact me. 
+                    </p>
+            </div><!-- column--> 
+        </div><!-- me -->
+
+        <!-- <div class="intro">
+            <h1>intro part</h1>
+        </div>intro -->
+
+        <div class="projects" id="projects">
+            <h1>Projects</h1>
+            <nav class="nav-desktop nav-projects">
+                <ul>
+                    <li><a href="#" data-show="all" class="active">All</a></li>
+                    <li><a href="#" data-show="html/css">HTML/CSS</a></li>
+                    <li><a href="#" data-show="javascript">JavaScript</a></li>
+                    <li><a href="#" data-show="react">React</a></li>
+                    <li><a href="#" data-show="react">Angualr</a></li>
+                    <li><a href="#" data-show="react">Node</a></li>
+                </ul>
+            </nav>
+            <div class="content-projects">
+                <div class="square html">
+                    <img src="img/pizzaiolo-logo.jpg">
+                </div>
+                <div class="square html">
+                    <img src="https://picsum.photos/150/151/?random">
+                </div>
+                <div class="square react">
+                    <img src="https://picsum.photos/150/152/?random">
+                </div>
+                <div class="square react">
+                    <img src="https://picsum.photos/150/152/?random">
+                </div>
+                <div class="square javascript">
+                    <img src="https://picsum.photos/150/153/?random">
+                </div>
+                <div class="square javascript">
+                    <img src="https://picsum.photos/150/153/?random">
+                </div>
+            </div>
+        </div><!-- projects -->
+
+        <div class="contact" id="contact">
+            <h1>Contact me</h1>
+
+            <form action="/action_page.php" id="usrform">
+                <div class="input">
+                    <input type="text" placeholder="Name" maxlength="15">
+                    <input type="email" placeholder="Email" required>
+                </div><!--input-->
+                <textarea  name="comment" form="usrform" placeholder="Enter text here..."></textarea>
+                <br /> 
+                <input type="submit" value="Submit">
+            </form>
+
+            <div class="icons">
+                <span><a href="mailto:simoneisonni@gmail.com?Subject=Some%20subject"><i class="fas fa-envelope" ></i></a></span>
+                <span><a href="https://www.linkedin.com/in/simone-isonni-b985b2159/"><i class="fab fa-linkedin"></i></a></span>
+                <span><a href="tel:+1-604-368-2935"></a><i class="fas fa-phone"></i></span>
+            </div>
+        </div><!-- contact-->
+        <footer>
+            <p>Simone Isonni</p>
+        </footer>
+    </div> <!-- wrapepr -->
+    <script src="scripts/projects.js"></script>
+</body>
+</html>

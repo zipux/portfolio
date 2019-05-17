@@ -1,0 +1,821 @@
+/* CSS Document */
+header nav {
+  max-height: 100%;
+  flex-grow: 1;
+  width: 200px; }
+  header nav ul {
+    justify-content: space-between;
+    padding-top: 0;
+    height: 420px;
+    margin: 0;
+    padding: 20px 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 25px 90px rgba(5, 1, 240, 0.979); }
+  header nav ul li {
+    list-style: none;
+    text-align: center;
+    display: block; }
+  header nav ul li:last-child {
+    border-right: none; }
+  header nav ul li a {
+    text-decoration: none;
+    padding: 0 50px;
+    display: block; }
+  header nav ul li a .icon {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    overflow: hidden;
+    /*background:  #ccc; /* color bck icon*/
+    margin: 0 auto 10px; }
+  header nav ul li a .icon .fa {
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 34px;
+    transition: 0.5s;
+    color: #000; }
+  header nav ul li a .icon .fa:last-child {
+    color: #e91e63; }
+  header nav ul li a:hover .icon .fa {
+    transform: translateY(-100%); }
+  header nav ul li a .name {
+    position: relative;
+    height: 20px;
+    width: auto;
+    display: inline-block;
+    overflow: hidden; }
+  header nav ul li a .name span {
+    display: block;
+    position: relative;
+    color: #000;
+    font-size: 18px;
+    line-height: 20px;
+    transition: 0.5s; }
+  header nav ul li a .name span::before {
+    content: attr(data-text);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #e91e63; }
+  header nav ul li a:hover .name span {
+    transform: translateY(20px); }
+header #logo {
+  margin-top: 0;
+  width: 200px;
+  height: 140px;
+  padding: 28px 2px;
+  background-color: rgba(5, 1, 240, 0.979);
+  color: white;
+  margin-bottom: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  font-family: Georgia, Times, Times New Roman, serif;
+  background-color: #303030; }
+
+.wrap-contact {
+  width: auto;
+  margin: 0 auto;
+  position: relative;
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.wrap-contact h2 {
+  /* contact us */
+  font-size: 2.5em;
+  text-align: center;
+  color: aquamarine;
+  padding-top: 15px; }
+
+#envelope {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 20px;
+  left: 95px; }
+
+.container-radio {
+  border: 2px solid green;
+  text-align: center;
+  margin-bottom: 10px;
+  height: 100%; }
+
+label {
+  font-size: 1.7em;
+  color: aquamarine; }
+
+.input {
+  border: 2px solid pink;
+  height: 40px;
+  width: 80%;
+  text-align: center;
+  background-color: white;
+  /*transparent;*/
+  color: black;
+  font-size: 1.6em;
+  margin: 10px 0; }
+
+.input-box {
+  margin-top: 10px; }
+
+/* button */
+input[type=submit] {
+  background: linear-gradient(to right, gold, darkorange);
+  color: white;
+  --width: 250px;
+  --height: calc(var(--width) / 3);
+  width: var(--width);
+  height: var(--height);
+  text-align: center;
+  line-height: var(--height);
+  font-size: calc(var(--height) / 2.5);
+  font-family: sans-serif;
+  letter-spacing: 0.2em;
+  border: 1px solid darkgoldenrod;
+  border-radius: 2em;
+  transform: perspective(500px) rotateY(-20deg);
+  /*-15 */
+  text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 45px; }
+
+input[type=submit]:hover {
+  transform: perspective(500px) rotateY(20deg);
+  /* 15 */
+  text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: -2px 0 0 5px rgba(0, 0, 0, 0.2); }
+
+input[type=submit]::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, red, transparent);
+  left: -100%;
+  transition: 0.5s; }
+
+input[type=submit]:hover::before {
+  left: 100%; }
+
+@media screen and (max-width: 1080px) {
+  .wrap-contact {
+    width: 550px;
+    margin: 0; } }
+footer {
+  padding: 1px;
+  background-color: #7683C9;
+  width: 1260px;
+  text-align: center;
+  height: 40px;
+  position: absolute;
+  bottom: 0; }
+
+#p-footer {
+  font-size: 0.8em; }
+
+.body-lessons {
+  overflow: hidden;
+  background-color: #303030; }
+
+#flipbook {
+  width: 800px;
+  /*800*/
+  height: 500px;
+  /*500*/
+  margin: 0 auto;
+  /*border: 2px solid red;*/ }
+
+.page {
+  /* created by me*/
+  width: 100%;
+  /*max-width:*/
+  height: 100%;
+  border-left: 1px solid black; }
+
+#flipbook .page {
+  width: 800px;
+  /*800 */
+  height: 500px;
+  /*500*/
+  background-color: white;
+  /* white */
+  font-size: 15px;
+  text-align: left; }
+
+.page > * {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 8px; }
+
+#flipbook .page-wrapper {
+  -webkit-perspective: 2000px;
+  -moz-perspective: 2000px; }
+
+#flipbook .hard {
+  background: #403E3E !important;
+  color: #fff; }
+
+.title-lessons {
+  font-size: 1.5em;
+  color: green; }
+
+.sub-title-lessons {
+  color: red;
+  font-size: 1em;
+  margin: 5px 0 0 0; }
+
+p {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+#p-index {
+  font-size: 1em;
+  line-height: 1.4; }
+
+#img-index {
+  max-width: 100%;
+  height: 550px; }
+
+#title-schedule {
+  color: red;
+  font-size: 2em; }
+
+#main-calendar {
+  width: 100%; }
+
+.grid-calendar {
+  background-color: transparent;
+  background-image: url("..//img/schedulebackground.jpg");
+  background-size: 100% 100%;
+  display: grid;
+  height: 600px;
+  grid-template: 'day1 day2 day3 day4' 'day5 day6 day7 day8' 'day9 day10 day11 day12';
+  grid-gap: 10px;
+  padding: 0 10px; }
+
+.day1 {
+  grid-area: day1;
+  border: solid 1px grey;
+  border-radius: 10px;
+  box-shadow: 5px -5px 5px #aaaaaa;
+  background-color: transparent; }
+  .day1 .courseOutline {
+    position: relative;
+    display: inline-block;
+    width: 100%; }
+    .day1 .courseOutline p {
+      color: #424299;
+      background-color: wheat;
+      opacity: 0.7;
+      font-size: 1.2em;
+      margin-block-start: 5px; }
+  .day1 .courseOutline .courseContext {
+    visibility: hidden;
+    width: 100%;
+    background-color: transparent;
+    color: #424299;
+    /* Position the tooltip text - see examples below! */
+    position: absolute; }
+  .day1 .courseOutline:hover .courseContext {
+    visibility: visible;
+    background-color: wheat;
+    opacity: 0.7; }
+
+.day2 {
+  grid-area: day2;
+  border: solid 1px grey;
+  border-radius: 10px;
+  box-shadow: 5px -5px 5px #aaaaaa;
+  background-color: transparent; }
+  .day2 .courseOutline {
+    position: relative;
+    display: inline-block;
+    width: 100%; }
+    .day2 .courseOutline p {
+      color: #424299;
+      background-color: wheat;
+      opacity: 0.7;
+      font-size: 1.2em;
+      margin-block-start: 5px; }
+  .day2 .courseOutline .courseContext {
+    visibility: hidden;
+    width: 100%;
+    background-color: transparent;
+    color: #424299;
+    /* Position the tooltip text - see examples below! */
+    position: absolute; }
+  .day2 .courseOutline:hover .courseContext {
+    visibility: visible;
+    background-color: wheat;
+    opacity: 0.7; }
+
+.day3 {
+  grid-area: day3;
+  border: solid 1px grey;
+  border-radius: 10px;
+  box-shadow: 5px -5px 5px #aaaaaa;
+  background-color: transparent; }
+  .day3 .courseOutline {
+    position: relative;
+    display: inline-block;
+    width: 100%; }
+    .day3 .courseOutline p {
+      color: #424299;
+      background-color: wheat;
+      opacity: 0.7;
+      font-size: 1.2em;
+      margin-block-start: 5px; }
+  .day3 .courseOutline .courseContext {
+    visibility: hidden;
+    width: 100%;
+    background-color: transparent;
+    color: #424299;
+    /* Position the tooltip text - see examples below! */
+    position: absolute; }
+  .day3 .courseOutline:hover .courseContext {
+    visibility: visible;
+    background-color: wheat;
+    opacity: 0.7; }
+
+.day4 {
+  grid-area: day4;
+  border: solid 1px grey;
+  border-radius: 10px;
+  box-shadow: 5px -5px 5px #aaaaaa;
+  background-color: transparent; }
+  .day4 .courseOutline {
+    position: relative;
+    display: inline-block;
+    width: 100%; }
+    .day4 .courseOutline p {
+      color: #424299;
+      background-color: wheat;
+      opacity: 0.7;
+      font-size: 1.2em;
+      margin-block-start: 5px; }
+  .day4 .courseOutline .courseContext {
+    visibility: hidden;
+    width: 100%;
+    background-color: transparent;
+    color: #424299;
+    /* Position the tooltip text - see examples below! */
+    position: absolute; }
+  .day4 .courseOutline:hover .courseContext {
+    visibility: visible;
+    background-color: wheat;
+    opacity: 0.7; }
+
+.day5 {
+  grid-area: day5;
+  border: solid 1px grey;
+  border-radius: 10px;
+  box-shadow: 5px -5px 5px #aaaaaa;
+  background-color: transparent; }
+  .day5 .courseOutline {
+    position: relative;
+    display: inline-block;
+    width: 100%; }
+    .day5 .courseOutline p {
+      color: #424299;
+      background-color: wheat;
+      opacity: 0.7;
+      font-size: 1.2em;
+      margin-block-start: 5px; }
+  .day5 .courseOutline .courseContext {
+    visibility: hidden;
+    width: 100%;
+    background-color: transparent;
+    color: #424299;
+    /* Position the tooltip text - see examples below! */
+    position: absolute; }
+  .day5 .courseOutline:hover .courseContext {
+    visibility: visible;
+    background-color: wheat;
+    opacity: 0.7; }
+
+.day6 {
+  grid-area: day6;
+  border: solid 1px grey;
+  border-radius: 10px;
+  box-shadow: 5px -5px 5px #aaaaaa;
+  background-color: transparent; }
+  .day6 .courseOutline {
+    position: relative;
+    display: inline-block;
+    width: 100%; }
+    .day6 .courseOutline p {
+      color: #424299;
+      background-color: wheat;
+      opacity: 0.7;
+      font-size: 1.2em;
+      margin-block-start: 5px; }
+  .day6 .courseOutline .courseContext {
+    visibility: hidden;
+    width: 100%;
+    background-color: transparent;
+    color: #424299;
+    /* Position the tooltip text - see examples below! */
+    position: absolute; }
+  .day6 .courseOutline:hover .courseContext {
+    visibility: visible;
+    background-color: wheat;
+    opacity: 0.7; }
+
+.day7 {
+  grid-area: day7;
+  border: solid 1px grey;
+  border-radius: 10px;
+  box-shadow: 5px -5px 5px #aaaaaa;
+  background-color: transparent; }
+  .day7 .courseOutline {
+    position: relative;
+    display: inline-block;
+    width: 100%; }
+    .day7 .courseOutline p {
+      color: #424299;
+      background-color: wheat;
+      opacity: 0.7;
+      font-size: 1.2em;
+      margin-block-start: 5px; }
+  .day7 .courseOutline .courseContext {
+    visibility: hidden;
+    width: 100%;
+    background-color: transparent;
+    color: #424299;
+    /* Position the tooltip text - see examples below! */
+    position: absolute; }
+  .day7 .courseOutline:hover .courseContext {
+    visibility: visible;
+    background-color: wheat;
+    opacity: 0.7; }
+
+.day8 {
+  grid-area: day8;
+  border: solid 1px grey;
+  border-radius: 10px;
+  box-shadow: 5px -5px 5px #aaaaaa;
+  background-color: transparent; }
+  .day8 .courseOutline {
+    position: relative;
+    display: inline-block;
+    width: 100%; }
+    .day8 .courseOutline p {
+      color: #424299;
+      background-color: wheat;
+      opacity: 0.7;
+      font-size: 1.2em;
+      margin-block-start: 5px; }
+  .day8 .courseOutline .courseContext {
+    visibility: hidden;
+    width: 100%;
+    background-color: transparent;
+    color: #424299;
+    /* Position the tooltip text - see examples below! */
+    position: absolute; }
+  .day8 .courseOutline:hover .courseContext {
+    visibility: visible;
+    background-color: wheat;
+    opacity: 0.7; }
+
+.day9 {
+  grid-area: day9;
+  border: solid 1px grey;
+  border-radius: 10px;
+  box-shadow: 5px -5px 5px #aaaaaa;
+  background-color: transparent; }
+  .day9 .courseOutline {
+    position: relative;
+    display: inline-block;
+    width: 100%; }
+    .day9 .courseOutline p {
+      color: #424299;
+      background-color: wheat;
+      opacity: 0.7;
+      font-size: 1.2em;
+      margin-block-start: 5px; }
+  .day9 .courseOutline .courseContext {
+    visibility: hidden;
+    width: 100%;
+    background-color: transparent;
+    color: #424299;
+    /* Position the tooltip text - see examples below! */
+    position: absolute; }
+  .day9 .courseOutline:hover .courseContext {
+    visibility: visible;
+    background-color: wheat;
+    opacity: 0.7; }
+
+.day10 {
+  grid-area: day10;
+  border: solid 1px grey;
+  border-radius: 10px;
+  box-shadow: 5px -5px 5px #aaaaaa;
+  background-color: transparent; }
+  .day10 .courseOutline {
+    position: relative;
+    display: inline-block;
+    width: 100%; }
+    .day10 .courseOutline p {
+      color: #424299;
+      background-color: wheat;
+      opacity: 0.7;
+      font-size: 1.2em;
+      margin-block-start: 5px; }
+  .day10 .courseOutline .courseContext {
+    visibility: hidden;
+    width: 100%;
+    background-color: transparent;
+    color: #424299;
+    /* Position the tooltip text - see examples below! */
+    position: absolute; }
+  .day10 .courseOutline:hover .courseContext {
+    visibility: visible;
+    background-color: wheat;
+    opacity: 0.7; }
+
+.day11 {
+  grid-area: day11;
+  border: solid 1px grey;
+  border-radius: 10px;
+  box-shadow: 5px -5px 5px #aaaaaa;
+  background-color: transparent; }
+  .day11 .courseOutline {
+    position: relative;
+    display: inline-block;
+    width: 100%; }
+    .day11 .courseOutline p {
+      color: #424299;
+      background-color: wheat;
+      opacity: 0.7;
+      font-size: 1.2em;
+      margin-block-start: 5px; }
+  .day11 .courseOutline .courseContext {
+    visibility: hidden;
+    width: 100%;
+    background-color: transparent;
+    color: #424299;
+    /* Position the tooltip text - see examples below! */
+    position: absolute; }
+  .day11 .courseOutline:hover .courseContext {
+    visibility: visible;
+    background-color: wheat;
+    opacity: 0.7; }
+
+.day12 {
+  grid-area: day12;
+  border: solid 1px grey;
+  border-radius: 10px;
+  box-shadow: 5px -5px 5px #aaaaaa;
+  background-color: transparent; }
+  .day12 .courseOutline {
+    position: relative;
+    display: inline-block;
+    width: 100%; }
+    .day12 .courseOutline p {
+      color: #424299;
+      background-color: wheat;
+      opacity: 0.7;
+      font-size: 1.2em;
+      margin-block-start: 5px; }
+  .day12 .courseOutline .courseContext {
+    visibility: hidden;
+    width: 100%;
+    background-color: transparent;
+    color: #424299;
+    /* Position the tooltip text - see examples below! */
+    position: absolute; }
+  .day12 .courseOutline:hover .courseContext {
+    visibility: visible;
+    background-color: wheat;
+    opacity: 0.7; }
+
+/*
+.courseOutline {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  p{
+      color :rgb(66, 66, 153);
+      background-color: wheat;
+      opacity:0.7;
+      font-size: 1.2em;
+      margin-block-start: 5px;
+  }
+
+}
+.courseOutline .courseContext {
+  visibility: hidden;
+  width: 100%;
+  background-color:transparent;
+  color: rgb(66, 66, 153);
+
+  /* Position the tooltip text - see examples below! 
+  position: absolute;
+
+}
+.courseOutline:hover .courseContext {
+  visibility: visible;
+  background-color:wheat;
+  opacity:0.7;
+
+}*/
+.day1, .day2, .day3,
+.day4, .day5, .day6,
+.day7, .day8, .day9,
+.day10, .day11, .day12 {
+  position: relative;
+  overflow: hidden; }
+
+.textanim-title {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  transition: 0.5s;
+  font-weight: bold;
+  color: red;
+  font-size: 1em; }
+
+.day1:hover .textanim-title,
+.day2:hover .textanim-title,
+.day3:hover .textanim-title,
+.day4:hover .textanim-title,
+.day5:hover .textanim-title,
+.day6:hover .textanim-title,
+.day7:hover .textanim-title,
+.day8:hover .textanim-title,
+.day9:hover .textanim-title,
+.day10:hover .textanim-title,
+.day11:hover .textanim-title,
+.day12:hover .textanim-title {
+  top: 10px;
+  transform: translateY(0); }
+
+.textanim-hidden {
+  position: absolute;
+  top: 200px;
+  opacity: 0.5;
+  transition: 0.8s;
+  left: 0;
+  width: 230px;
+  padding: 0;
+  background: black;
+  color: white; }
+
+.day1:hover .textanim-hidden,
+.day2:hover .textanim-hidden,
+.day3:hover .textanim-hidden,
+.day4:hover .textanim-hidden,
+.day5:hover .textanim-hidden,
+.day6:hover .textanim-hidden,
+.day7:hover .textanim-hidden,
+.day8:hover .textanim-hidden,
+.day9:hover .textanim-hidden,
+.day10:hover .textanim-hidden,
+.day11:hover .textanim-hidden,
+.day12:hover .textanim-hidden {
+  top: 75px;
+  transform: translateY(-50%); }
+
+ul {
+  list-style-type: none;
+  text-align: left;
+  padding: 30px 0 10px 15px; }
+
+  /*
+main{flex-grow: 1}
+.Schedule{
+    display: grid;
+    // height:450px; original style
+    height: 550px;
+    grid-template:
+    'day1 day2 day3 day4'
+    'day5 day6 day7 day8'
+    'day9 day10 day11 day12';
+  grid-gap: 10px;
+  padding: 10px;
+  
+}*/
+.item {
+  text-align: left;
+  line-height: 1.4; }
+
+#title-outline {
+  text-align: center;
+  color: red;
+  font-size: 1.3em; }
+
+.outline-column {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  line-height: 1.4; }
+
+.column {
+  text-align: left; }
+
+.column:first-child {
+  padding-right: 10px; }
+
+.wrapper {
+  width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f5eddf;
+  display: flex;
+  text-align: center; }
+
+main {
+  height: 720px;
+  width: 100%;
+  padding: 30px; }
+
+.hamburger {
+  display: none;
+  margin-block-start: 10px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (max-width: 946px) {
+    .hamburger {
+      display: block;
+      width: 35px;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      cursor: pointer; }
+      .hamburger .hamburger-content {
+        height: 24px; }
+      .hamburger .text {
+        margin: -1px;
+        padding: 0;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        clip: rect(0, 0, 0, 0);
+        position: absolute; }
+      .hamburger .bar {
+        display: block;
+        height: 3px;
+        background-color: white;
+        width: 100%;
+        position: relative;
+        top: 10px;
+        transition: all 0.3s ease-in-out; }
+        .show .hamburger .bar {
+          background-color: transparent; }
+        .hamburger .bar:after {
+          content: "";
+          width: 100%;
+          height: 3px;
+          top: 10px;
+          left: 0;
+          background-color: white;
+          position: absolute;
+          transition: all 0.3s ease-in-out; }
+          .show .hamburger .bar:after {
+            top: 0;
+            transform: rotate(45deg); }
+        .hamburger .bar:before {
+          content: "";
+          width: 100%;
+          height: 3px;
+          top: -10px;
+          left: 0;
+          background-color: white;
+          position: absolute;
+          transition: all 0.3s ease-in-out; }
+          .show .hamburger .bar:before {
+            top: 0;
+            transform: rotate(-45deg); }
+      .hamburger:focus,
+      .hamburger .hamburger-content:focus {
+        outline: none; }
+      .hamburger:focus .hamburger-content {
+        outline: 5px solid #7683C9; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/bootstrap-reboot.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <title>Restaurant Da Pippo</title>
+   <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="favicon-32x32">
+</head>
+<body>
+
+    <header> <!-- inizio della barra -->
+        <div class="inner-header">
+        <div class="photo"><a href="index.html"><img src="./img/pizzaiolo-logo.jpg"  alt="logo"></a>  <!-- width="200" height="170" DO NOT need because the pic is scaled by GIMP-->
+       
+    </div>
+    
+    <nav rol="mainav">
+        <ul>
+            <li><a href="menu.html">Our menu</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="contact.html">Contact and Reservation</a></li>
+        </ul>
+    </nav>
+    
+    </div> 
+</header> <!-- fine della barra-->
+
+<form action="#" method="post">
+
+<main id="main-contact">
+        <div class="list-menu">
+        <div class="column">
+
+<fieldset>
+    <div class="h2-contact"><h2>Book Online</h2></div>
+
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="user_name" required>
+
+    <label for="last_name">Your Last Name</label>
+    <input type="text" id="last_name" name="user_last_name" required>
+
+    <label for="email">Your Email</label>
+    <input type="email" id="email" email="user_email" required>
+
+                    <!-- Container -->
+    <label>How Many People are you?</label>
+    <label class="container">One<input type="radio" checked="checked" name="radio">
+    <span class="checkmark"></span></label>
+
+    <label class="container">Two<input type="radio" name="radio">
+    <span class="checkmark"></span></label>
+
+    <label class="container">Three<input type="radio" name="radio">
+    <span class="checkmark"></span></label>
+
+    <label class="container">Four<input type="radio" name="radio">
+    <span class="checkmark"></span></label>
+                    <!-- End of container-->
+
+    <p class="contact-p">If you are more than 4 people please call us at (604) 520-4587</p>
+
+    <label for ="date">Choose a date</label>
+    <input type="date" id="date" date="date_chosen"required>
+    <label>Choose an appointment time (opening hours 5:00 to 11:00)</label>
+    <input id="appt-time" type="time" name="appt-time" min="17:00" max="22:30" required>
+    <span class="validity"></span>
+    
+    <label for="message">Write here if you have some required</label>
+    <textarea rows="5" cols="35" id="message" name="text"></textarea>
+
+</fieldset>
+
+    <button type="submit">Submit</button>
+
+</form>
+</div>
+                       <!-- Second column-->
+<div class="column">
+    <div class="h2-contact"><h2>We are Here</h2>
+
+<div id="map"> </div>
+
+<p class="p2column">We are located at 5447 Norfolk St Burnaby. Phone  (604) 520-4587</p>
+
+
+</main>
+
+<footer>
+    <p>&copy;All copyright reserved. For educational use only</p>
+</footer>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+<!--for banner slide-->
+<script src="scripts/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFZla-h-ZMB85aBBhHQrFNcyHD20bK-kc&callback=myMap" type="text/javascript"></script>
+
+
+
+</body>
+</html>

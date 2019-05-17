@@ -1,0 +1,75 @@
+.body-lessons {
+    overflow: hidden;
+    background-color: $body-bg-color;
+}
+
+#flipbook {
+    width: 800px; /*800*/
+    height: 500px; /*500*/
+    margin: 0 auto;
+    /*border: 2px solid red;*/
+
+}
+
+.page  { /* created by me*/
+    width: 100%;  /*max-width:*/
+    height:100%;
+    border-left: 1px solid black;
+    
+}
+
+#flipbook .page {
+    width: 800px; /*800 */
+    height: 500px; /*500*/
+    background-color: white; /* white */
+    font-size: 15px;
+    text-align: left;
+    
+    
+}
+
+.img-flipbook2 {
+   // padding-top: 12px;
+    //width: 520px;
+   // height: 320px;
+}
+
+.page > * {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    
+}
+
+#flipbook .page-wrapper {
+    -webkit-perspective: 2000px;
+    -moz-perspective: 2000px;
+
+}
+#flipbook .hard {
+    background: #403E3E !important;
+    color: #fff;
+
+}
+
+.title-lessons {
+    font-size: 1.5em;
+  //  font-weight: bold;
+  color: green;
+  //margin: 15px 0 8px 0;
+}
+
+.sub-title-lessons {
+    color: red;
+    font-size: 1em;
+    margin: 5px 0 0 0;
+
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+

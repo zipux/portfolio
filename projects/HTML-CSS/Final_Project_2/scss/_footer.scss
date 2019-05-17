@@ -1,0 +1,14 @@
+// Footer Styles
+footer {
+    padding:  $padding-footer;
+    background-color: $footer-bg-color;
+    @include footer-width;
+    @include align-center;
+    @include height-footer;
+    @include position-footer;
+    
+}
+
+#p-footer {
+    font-size: 0.8em;
+}

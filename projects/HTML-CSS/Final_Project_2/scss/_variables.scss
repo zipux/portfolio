@@ -1,0 +1,30 @@
+// Global Variables
+// These will be available anywhere after these 
+// varibables are declared
+
+// Colors
+$brand-color: #eb203b;
+$body-bg-color: #303030;
+$wrapper-bg-color: rgb(245, 237, 223);
+// Text Colors
+$text-color-dark: black;
+$text-color-light: rgb(245, 235, 235);
+
+// Use Color functions to brighten and darken colors
+$brand-color-dark: darken($brand-color, 20);
+$brand-color-light: lighten($brand-color, 20);
+
+// Fonts
+$body-font: Georgia, Times, Times New Roman, serif;
+$heading-font: Arial, Helvetica, sans-serif;
+// Typographic Defualts
+$line-height: 1.4;
+
+// Layout variables
+$padding: 30px;
+// Grid Values
+$gutter: 2;
+
+
+// Utility variables
+$link-hover-selector: '&:hover, &:focus, &:active';
