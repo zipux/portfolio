@@ -3,7 +3,7 @@
   <head>
     <title>Assignment 1 - Simone Isonni</title>
     <!-- NOTE: Reference your JavaScript solution here, above the commented out code below -->
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.5.2/jasmine.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.5.2/jasmine.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.5.2/jasmine-html.min.js"></script>
@@ -20,26 +20,24 @@
       <img src="images/turtle.jpg" width="350px" ondblclick="hideshow(this)">
       <img src="images/dog.jpg" width="350px" ondblclick="hideshow(this)"><br>
 
+      <p>Double clcik on a picture to hidden it</p>
+
       <a href="https://www.bcit.com">Visit BCIT website</a>
       <a href="https://www.vancouver.ca">Visit Vancouver website</a>
       <a href="https://www.nhl.com">Visit NHL website</a>
 
-      <p onmouseover="textcolor(this)" onmouseout="textcolor(this)" onclick="getborder(this)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id non nesciunt quasi numquam minus velit labore culpa maxime illum fugiat!</p>
+      <p onmouseover="textcolor(this)" onmouseout="textcolor(this)" onclick="getborder(this)">Hover me and click on me</p>
       <p onmouseover="textcolor(this)" onmouseout="textcolor(this)" onclick="getborder(this)"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro maiores ullam eligendi.</p>
       <p onmouseover="textcolor(this)" onmouseout="textcolor(this)" onclick="getborder(this)">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci distinctio numquam earum pariatur, autem delectus?</p>
       </div>
     </div>
 
     <div id="middle">
-      <img src="images/cat.jpg" width="350px" ondblclick="hideshow(this)">
-      <img src="images/fish.jpg" width="350px" ondblclick="hideshow(this)">
-      <img src="images/elk.jpg" width="350px" ondblclick="hideshow(this)"><br>
+      <img src="images/cat.jpg" width="350px">
+      <img src="images/fish.jpg" width="350px">
+      <img src="images/elk.jpg" width="350px"><br>
   
-      <a href="https://www.bcit.com">Visit BCIT website</a>
-      <a href="https://www.vancouver.ca">Visit Vancouver website</a>
-      <a href="https://www.nhl.com">Visit NHL website</a>
-  
-      <p onclick="getborder(this)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id non nesciunt quasi numquam minus velit labore culpa maxime illum fugiat!</p>
+      <p onclick="getborder(this)">Click on me to and I get a border</p>
       <p onclick="getborder(this)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro maiores ullam eligendi.</p>
       <p onclick="getborder(this)">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci distinctio numquam earum pariatur, autem delectus?</p>
 

@@ -1,0 +1,40 @@
+.square {
+    position: relative;
+
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 4px;
+    bottom: 0px;
+    left: 4px;
+    right: 0;
+    height: 94%;
+    width: 97%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .square:hover .overlay {
+    opacity: 0.8;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
