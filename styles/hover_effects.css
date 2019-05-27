@@ -21,6 +21,7 @@
     opacity: 0;
     transition: .5s ease;
     background-color: #008CBA;
+    border-radius: 5%;
   }
   
   .square:hover .overlay {
