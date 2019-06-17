@@ -215,20 +215,33 @@ header .nav-desktop  a:hover {
     border-radius: 20%;
 
 }
-/* this line is to hide html and js */
-.content-react .html, .content-react .javascript {
+
+/* this line is to hide js, react, angular and node show only HTML*/
+.content-html .javascript, .content-html .react, .content-html .angular, .content-html .node {
     display: none;
 }
 
-/* this line is to hide js and react */
-.content-html .react, .content-html .javascript {
+/* this line is to hide html, react and angular show only JAVASCRIPT */
+.content-javascript .html, .content-javascript .react, .content-javascript .angular, .content-javascript .node {
     display: none;
 }
 
-/* this line is to hide js and react */
-.content-javascript .react, .content-javascript .html {
+/* this line is to hide html, js and angular show REACT */
+.content-react .html, .content-react .javascript, .content-react .angular, .content-react .node {
     display: none;
 }
+
+/* this line is to hide html, js, and react, show only ANGULAR */
+.content-angular .html, .content-angular .javascript, .content-angular .react,  .content-angular .node   {
+    display: none;
+}
+
+/* this line is to hide html, js, react and angular show only NODE*/
+.content-node .html .content-node .javascript, .content-node .react, .content-node .angular {
+    display: none;
+}
+
+
 
 .content-projects { /* only squares */
     display: flex;
