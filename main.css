@@ -237,11 +237,9 @@ header .nav-desktop  a:hover {
 }
 
 /* this line is to hide html, js, react and angular show only NODE*/
-.content-node .html .content-node .javascript, .content-node .react, .content-node .angular {
+.content-node .html, .content-node .javascript, .content-node .react, .content-node .angular {
     display: none;
 }
-
-
 
 .content-projects { /* only squares */
     display: flex;

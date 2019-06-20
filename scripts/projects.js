@@ -9,24 +9,47 @@ selecSqaure.addEventListener("click", function(e){ // addEventListener is the wa
 
    if(this.dataset.show=='all') {
     document.querySelector('.content-projects').classList.remove('content-html')
-    document.querySelector('.content-projects').classList.remove('content-react')
     document.querySelector('.content-projects').classList.remove('content-javascript')
+    document.querySelector('.content-projects').classList.remove('content-react')
+    document.querySelector('.content-projects').classList.remove('content-angular')
+    document.querySelector('.content-projects').classList.remove('content-node')
 } 
     if(this.dataset.show=='html/css') {
         document.querySelector('.content-projects').classList.add('content-html')
         document.querySelector('.content-projects').classList.remove('content-react')
         document.querySelector('.content-projects').classList.remove('content-javascript')
+        document.querySelector('.content-projects').classList.remove('content-angular')
+        document.querySelector('.content-projects').classList.remove('content-node')
     } 
-    if(this.dataset.show=='react') {
-        document.querySelector('.content-projects').classList.add('content-react')
-        document.querySelector('.content-projects').classList.remove('content-html')
-        document.querySelector('.content-projects').classList.remove('content-javascript')
-    }
     if(this.dataset.show=='javascript') {
         document.querySelector('.content-projects').classList.add('content-javascript')
         document.querySelector('.content-projects').classList.remove('content-html')
         document.querySelector('.content-projects').classList.remove('content-react')
+        document.querySelector('.content-projects').classList.remove('content-angular')
+        document.querySelector('.content-projects').classList.remove('content-node')
     }
+    if(this.dataset.show=='react') {
+        document.querySelector('.content-projects').classList.add('content-react')
+        document.querySelector('.content-projects').classList.remove('content-html')
+        document.querySelector('.content-projects').classList.remove('content-javascript')
+        document.querySelector('.content-projects').classList.remove('content-angular')
+        document.querySelector('.content-projects').classList.remove('content-node')
+    }
+    if(this.dataset.show=='angular') {
+        document.querySelector('.content-projects').classList.add('content-angular')
+        document.querySelector('.content-projects').classList.remove('content-html')
+        document.querySelector('.content-projects').classList.remove('content-javascript')
+        document.querySelector('.content-projects').classList.remove('content-react')
+        document.querySelector('.content-projects').classList.remove('content-node')
+    }
+    if(this.dataset.show=='node') {
+        document.querySelector('.content-projects').classList.add('content-node')
+        document.querySelector('.content-projects').classList.remove('content-html')
+        document.querySelector('.content-projects').classList.remove('content-javascript')
+        document.querySelector('.content-projects').classList.remove('content-react')
+        document.querySelector('.content-projects').classList.remove('content-angular')
+    }
+    
 } ) 
 console.log(selecSqaure)
 }
