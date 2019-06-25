@@ -1,9 +1,9 @@
 .container {
     height: 500px;
-    width: 1000px;
+    width: 900px;
     position: relative;
     overflow: hidden; /* this is hidden elements outside the container*/
-    border: 1px solid red;
+   /* border: 1px solid red;*/
     text-align: center;
 }
 

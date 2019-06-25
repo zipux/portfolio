@@ -3,7 +3,6 @@ let maxcounter = document.querySelectorAll("li").length-1
 
 document.querySelectorAll("li").forEach((element, index) => {
     element.classList.add("img" + index) 
-    //console.log ("hello")
 }); 
 /*select all LI for each elemtent give a index (index is a number)
     add to my class AND the number gave by index */ 

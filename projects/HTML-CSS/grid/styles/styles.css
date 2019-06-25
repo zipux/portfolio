@@ -1,0 +1,381 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+body {
+	margin: 0;
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+    max-width: 2048px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3, nav a {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+
+}
+
+header {
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	height: 70px;
+}
+
+header h1 {
+	margin: 0;
+	line-height: 70px;	
+	margin-left: 1.2rem;
+}
+
+.hamburger {
+	display: none;
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav a {
+	display: block;
+	line-height: 70px;
+	padding: 0 1.2rem;
+	color: white;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+	background-color: rgba(255,255,255,0.2);
+	outline: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 540px)) 1fr;
+}
+
+.section-01,
+.section-02,
+.section-03,
+.section-04,
+.section-05{
+    grid-column: span 4;
+}
+
+h1{
+    text-align: center;
+
+}
+
+.section-01{
+    background-color: beige;
+}
+
+.section-02{  /*border number */
+    border: 1em solid grey; 
+}
+
+.game-board{
+    display: grid;
+    grid-template-columns: repeat(5, 10vw);
+    grid-template-rows: repeat(5, 10vw);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 0.5em;
+    padding-bottom: 15px;
+    grid-template-areas: 
+    "one        two         three       four        five"
+    "sixteen    seventeen   seventeen   eightteen   six"
+    "fifteen    seventeen   seventeen   eightteen   seven"
+    "fourteen   nineteen    nineteen    nineteen    eight"
+    "thirteen   twelve      eleven      ten         nine";
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(2vw + 8px);
+    border: 2px solid black;
+}
+
+.box-01{
+    grid-area: one;
+}
+
+.box-02{
+    grid-area: two;
+}
+
+.box-03{
+    grid-area: three;
+}
+
+.box-04{
+    grid-area: four;
+}
+
+.box-05{
+    grid-area: five;
+}
+
+.box-06{
+    grid-area: six;
+}
+
+.box-07{
+    grid-area: seven;
+}
+
+.box-08{
+    grid-area: eight;
+}
+
+.box-09{
+    grid-area: nine;
+}
+
+.box-10{
+    grid-area: ten;
+}
+.box-11{
+    grid-area: eleven;
+}
+
+.box-12{
+    grid-area: twelve;
+}
+
+.box-13{
+    grid-area: thirteen;
+}
+
+.box-14{
+    grid-area: fourteen;
+}
+
+.box-15{
+    grid-area: fifteen;
+}
+
+.box-16{
+    grid-area: sixteen;
+}
+
+.box-17{
+    grid-area: seventeen;
+    background-color: blue;
+}
+
+.box-18{
+    grid-area: eightteen;
+    background-color: orange;
+}
+
+.box-19{
+    grid-area: nineteen;
+    background-color: green;
+}
+
+.section-04{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
+}
+
+.section-04 h1{
+    color: white;
+
+}
+
+.section-04 p{
+    color: white;
+    padding: 0;
+
+}
+
+.article-01, .article-02{
+    padding: 5px 10px;
+    
+}
+
+.article-01{
+    grid-column: 1/2;
+    grid-row: span 2;
+    background-color: blue;
+
+}
+
+.article-02{
+    grid-column: 2/4;
+    grid-row: span 2;
+    background-color: rgb(255, 136, 0);
+
+}
+
+.gallery {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+
+}
+
+.gallery-item{
+    position: relative;
+
+}
+
+.gallery-item img {
+    display: block;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.gallery-item p { /* scritta sulle foto*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    opacity: 0.5;
+    
+}
+
+footer {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 1.3rem;
+}
+
+footer a {
+	color: white;
+}
+
+@media only screen and (max-width: 580px){
+
+	/* Switch Multi-Column Layout to
+	   single column layout here */
+       .article-01{
+        grid-column: span 2;
+
+    }
+
+    .article-02{
+        grid-column: span 2;
+
+    }
+
+	/* Mobile Navigation Styles */
+
+    /* Hamburger Styles */
+    .hamburger {
+        display: block;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .hamburger-icon {
+        color: white;
+        line-height: 1;
+        font-size: 2.4em;
+    }
+
+    .hamburger:focus,
+    .hamburger-icon:focus {
+        outline: none;
+    }
+    
+    .hamburger:focus .hamburger-icon {
+        outline: 5px solid #69c1db;
+    }
+
+    .hamburger-text {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        border: 0;
+    }
+
+    header {
+        flex-wrap: wrap;
+		align-items: center;
+		height: auto;
+    }
+
+    nav {
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        transition: height 0.3s ease;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav a {
+        line-height: 40px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid #afafaf;
+    }
+
+    nav li:last-child a {
+        border-bottom: 1px solid #afafaf;
+    }
+
+    .show nav {
+        height: 126px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
