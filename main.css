@@ -40,7 +40,7 @@ header {
 
 .logo p:last-child {
     transform: rotate(10deg);
-    /* skew(-5deg); */
+
 }
 
 header nav {
@@ -59,31 +59,6 @@ header nav {
         display: none;
     }
 }
-
-/* @media screen and (max-width: 768px){
-    .logo {
-        width: 75%; 
-    }
-    header .nav-desktop {
-        width: 25%;
-        display: none;
-    }
-    header {
-        flex-wrap: wrap;
-    }
-    .picture-me {
-        max-width: 250px;
-    }
-    #nav-mobile {
-        display: none;
-    }
-
-
-    .fa-phone{
-        display: block;
-    }
-   
-    } */
 
 .nav-desktop ul {
     display: flex;
@@ -152,8 +127,9 @@ header .nav-desktop  a:hover {
 }
 
 .picture-me {
-    border-radius: 50%;
-    height: 90%;
+    /* border-radius: 50%; */
+    height: 200px;
+    width: 200px;
    
 }
 
